@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="sl" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Napni — vse za vodenje fitnesa, pod vašo znamko</title>
+  <meta name="description" content="Napni je platforma na ključ za fitnese in vadbene studie: stranke, karte, koledar, računi z davčnim potrjevanjem, CRM, sporočila in poročila. Pod vašim logotipom, na vaši domeni.">
+  <meta name="theme-color" content="#0a0b0d">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sl_SI">
+  <meta property="og:title" content="Napni — vse za vodenje fitnesa, pod vašo znamko">
+  <meta property="og:description" content="Stranke, karte, koledar, računi s FURS, CRM in sporočila v eni aplikaciji. Postavljena v minutah, pod vašim logotipom.">
+  <meta property="og:image" content="https://chrassy.github.io/napni-landing/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#vsebina">Preskoči na vsebino</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a class="logo" href="#" aria-label="Napni — na vrh">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="var(--volt)"/><path d="M9 23V9h3.6l6.2 8.6V9H23v14h-3.5l-6.3-8.7V23z" fill="#0a0b0d"/></svg>
+        <span class="logo__word">napni</span>
+      </a>
+      <nav class="nav__links" aria-label="Glavna navigacija">
+        <a href="#funkcije">Funkcije</a>
+        <a href="#znamka">Vaša znamka</a>
+        <a href="#denar">Računi in FURS</a>
+        <a href="#postavitev">Postavitev</a>
+        <a href="#varnost">Varnost</a>
+        <a href="#vprasanja">Vprašanja</a>
+      </nav>
+      <a class="btn btn--volt btn--sm nav__cta" href="#kontakt">Rezervirajte predstavitev</a>
+      <button class="nav__burger" aria-label="Odpri meni" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#funkcije">Funkcije</a>
+      <a href="#znamka">Vaša znamka</a>
+      <a href="#denar">Računi in FURS</a>
+      <a href="#postavitev">Postavitev</a>
+      <a href="#varnost">Varnost</a>
+      <a href="#vprasanja">Vprašanja</a>
+      <a class="btn btn--volt" href="#kontakt">Rezervirajte predstavitev</a>
+    </div>
+  </header>
+
+  <main id="vsebina">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="wrap hero__inner">
+        <p class="eyebrow reveal"><span class="pulse"></span> Platforma na ključ za fitnese in studie</p>
+        <h1 class="hero__title reveal">
+          Vi trenirate ljudi.<br>
+          <span class="hl">Napni</span> vodi klub.
+        </h1>
+        <p class="hero__lead reveal">
+          Stranke, karte, koledar, računi z davčnim potrjevanjem, prodaja, sporočila in poročila — v eni aplikaciji, pod vašim logotipom in na vaši domeni. Postavljena v minutah, ne v mesecih.
+        </p>
+        <div class="hero__ctas reveal">
+          <a class="btn btn--volt btn--lg" href="#kontakt">Rezervirajte predstavitev <span aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost btn--lg" href="#funkcije">Oglejte si funkcije</a>
+        </div>
+        <ul class="hero__ticks reveal" aria-label="Ključne prednosti">
+          <li>Davčno potrjevanje FURS vključeno</li>
+          <li>Podatki v EU, ločena baza za vsak klub</li>
+          <li>Slovenski vmesnik</li>
+        </ul>
+
+        <!-- product mock -->
+        <div class="stage reveal" data-club-theme>
+          <div class="app" role="img" aria-label="Prikaz nadzorne plošče aplikacije Napni">
+            <div class="app__bar">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="app__url"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 7V5a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="3.5" y="7" width="9" height="7" rx="1.5" fill="currentColor"/></svg><span data-club-domain>app.atlasgym.si</span></span>
+            </div>
+            <div class="app__body">
+              <aside class="app__side">
+                <div class="app__club"><span class="app__clublogo" data-club-initial>A</span><b data-club-name>Atlas Gym</b></div>
+                <ul>
+                  <li class="on"><i class="ic ic-grid"></i>Nadzorna plošča</li>
+                  <li><i class="ic ic-users"></i>Stranke</li>
+                  <li><i class="ic ic-cal"></i>Koledar</li>
+                  <li><i class="ic ic-check"></i>Obiski</li>
+                  <li><i class="ic ic-board"></i>Kontakti</li>
+                  <li><i class="ic ic-doc"></i>Računi</li>
+                  <li><i class="ic ic-tag"></i>Cenik</li>
+                  <li><i class="ic ic-msg"></i>Sporočila</li>
+                  <li><i class="ic ic-chart"></i>Poročila</li>
+                </ul>
+              </aside>
+              <div class="app__main">
+                <div class="app__head">
+                  <div>
+                    <small>Petek, 10. oktober</small>
+                    <h3>Dobro jutro, Nina</h3>
+                  </div>
+                  <span class="chip chip--club">+ Nova stranka</span>
+                </div>
+                <div class="kpis">
+                  <div class="kpi"><small>Veljavne karte</small><b data-count="248">248</b><em class="up">+12 ta mesec</em></div>
+                  <div class="kpi"><small>Obiski danes</small><b data-count="63">63</b><em>od 140 mest</em></div>
+                  <div class="kpi"><small>Izdani računi · okt.</small><b>18.420 €</b><em class="up">+8 %</em></div>
+                  <div class="kpi"><small>Karte potečejo v 7 dneh</small><b data-count="12">12</b><em class="warn">opomniki poslani</em></div>
+                </div>
+                <div class="app__cols">
+                  <div class="panel">
+                    <div class="panel__h"><b>Obiski · zadnjih 14 dni</b><small>Lokacija Center</small></div>
+                    <div class="bars" aria-hidden="true">
+                      <i style="--h:46%"></i><i style="--h:62%"></i><i style="--h:58%"></i><i style="--h:71%"></i><i style="--h:66%"></i><i style="--h:38%"></i><i style="--h:24%"></i>
+                      <i style="--h:52%"></i><i style="--h:69%"></i><i style="--h:63%"></i><i style="--h:78%"></i><i style="--h:74%"></i><i style="--h:41%"></i><i class="now" style="--h:45%"></i>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="panel__h"><b>Današnji termini</b><small>5</small></div>
+                    <ul class="slots">
+                      <li><time>07:00</time><span>Osebni trening · <b>Luka P.</b></span><em class="chip">Maja</em></li>
+                      <li><time>09:30</time><span>Posvet · <b>nov kontakt</b></span><em class="chip chip--club">Kontakt</em></li>
+                      <li><time>17:00</time><span>Osebni trening · <b>Eva K.</b></span><em class="chip">Tim</em></li>
+                      <li><time>18:30</time><span>Uvodni trening · <b>Rok Z.</b></span><em class="chip">Maja</em></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="toast toast--a"><span class="toast__ic ok">✓</span><div><b>Račun 2026-0142 potrjen</b><small>FURS · EOR 7c1e…a90b</small></div></div>
+          <div class="toast toast--b"><span class="toast__ic club">＋</span><div><b>Nov kontakt s spletne strani</b><small>Posvet rezerviran za ponedeljek</small></div></div>
+          <div class="toast toast--c"><span class="toast__ic snow">❄</span><div><b>Karta zamrznjena 14 dni</b><small>Nov datum izteka: 28. 1. 2027</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTEGRATIONS STRIP ============ -->
+    <section class="strip" aria-label="Povezave">
+      <div class="wrap strip__inner">
+        <span class="strip__label">Povezano s tem, kar fitnes v Sloveniji res potrebuje</span>
+        <ul class="strip__list">
+          <li>FURS</li><li>UPN QR</li><li>Stripe</li><li>SMS</li><li>E-pošta</li><li>Push</li><li>Trainerize</li><li>Excel / CSV</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEM ============ -->
+    <section class="section problem">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="kicker">Zakaj Napni</p>
+          <h2>Ena aplikacija namesto petih.</h2>
+          <p class="section__lead">Večina klubov teče na Excelu, papirnatih pogodbah, ločeni blagajni, koledarju v telefonu in opomnikih, ki jih nekdo pošilja na roke. Napni vse to poveže — in iz istih podatkov sam izračuna, kar ste prej šteli ročno.</p>
+        </div>
+        <div class="vs reveal">
+          <div class="vs__col vs__col--before">
+            <h3>Prej</h3>
+            <ul>
+              <li>Tabela strank, ki je nihče ne posodablja</li>
+              <li>Pogodbe in izjave v registratorju</li>
+              <li>Računi v enem programu, karte v drugem</li>
+              <li>Kdo mu poteče karta? »Bom pogledal.«</li>
+              <li>Opomniki po SMS-ju s službenega telefona</li>
+              <li>Mesečno poročilo = petek zvečer</li>
+            </ul>
+          </div>
+          <div class="vs__arrow" aria-hidden="true">→</div>
+          <div class="vs__col vs__col--after">
+            <h3>Z Napnijem</h3>
+            <ul>
+              <li>En register strank s celotno zgodovino</li>
+              <li>E-podpis, shranjeno pri stranki</li>
+              <li>Plačan predračun sam postane račun in nova karta</li>
+              <li>Stanje karte se izračuna samo, vsak trenutek</li>
+              <li>Samodejni opomniki po e-pošti, SMS-ju in push</li>
+              <li>Poročila v živo: zadržanje, LTV, zasedenost</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES GRID ============ -->
+    <section class="section" id="funkcije">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="kicker">Funkcije</p>
+          <h2>Vse, kar klub potrebuje od prvega obiska do zadnjega računa.</h2>
+          <p class="section__lead">Osnovni moduli so vključeni in vklopljeni od prvega dne. Dodatne vklopite, ko jih potrebujete.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card card--wide reveal">
+            <div class="card__ic"><i class="ic ic-users"></i></div>
+            <h3>Stranke in plačniki</h3>
+            <p>Celoten register z zgodovino kart, obiskov, računov in dokumentov. Račun gre lahko stranki, njenemu s.p.-ju ali delodajalcu — en plačnik lahko plačuje za več strank.</p>
+            <ul class="tags"><li>Skrbnik za vsako stranko</li><li>Privolitve po kanalih</li><li>Odsotnosti</li></ul>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-tag"></i></div>
+            <h3>Cenik in karte</h3>
+            <p>Karte s trajanjem in vključenimi obiski ali urami osebnega treninga na mesec. Stanje, iztek in preostanek se izračunajo sami.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-snow"></i></div>
+            <h3>Zamrznitve in dobroimetje</h3>
+            <p>Zamrznitev podaljša karto za točno toliko dni. Dodatne obiske in ure prodate kot dobroimetje, ki se porablja s treningi.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-cal"></i></div>
+            <h3>Koledar in termini</h3>
+            <p>Termini po lokacijah in trenerjih, pravila rezervacij in urniki. Posvet lahko rezervirate tudi kontaktu, ki še ni stranka.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-check"></i></div>
+            <h3>Obiski in osebni treningi</h3>
+            <p>Vsak obisk in vsaka ura osebnega treninga porabi pravo vključitev — iz karte ali iz dobroimetja. Brez ročnega štetja.</p>
+          </article>
+          <article class="card card--wide card--hot reveal">
+            <div class="card__ic"><i class="ic ic-doc"></i></div>
+            <h3>Računi, predračuni in davčno potrjevanje</h3>
+            <p>Predračun z UPN QR kodo, plačilo po nakazilu ali s kartico, nato račun, potrjen pri FURS z ZOI in EOR. PDF z vašim logotipom gre stranki po e-pošti.</p>
+            <ul class="tags"><li>FURS</li><li>UPN QR</li><li>Dobropisi</li><li>Blagajna</li><li>Darilni boni</li></ul>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-card"></i></div>
+            <h3>Spletna plačila</h3>
+            <p>Povežite svoj Stripe z enim klikom. Povezava za plačilo v sporočilu, plačilo samo knjiži račun.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-pen"></i></div>
+            <h3>Pogodbe in e-podpisi</h3>
+            <p>Pogodba o sodelovanju in pristopna izjava se podpišeta na zaslonu. Vsak podpisan dokument kaže na točno določeno različico besedila.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-board"></i></div>
+            <h3>Prodaja in skrb za stranke</h3>
+            <p>Table za kontakte in obstoječe stranke, spletni obrazci, kontrolni seznami, oznake. Napni opozori, ko stranka začne prihajati redkeje.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-msg"></i></div>
+            <h3>Sporočila in avtomatizacije</h3>
+            <p>E-pošta, SMS in push s predlogami. Opomniki pred iztekom karte, pred terminom in po plačilu — samo tistim, ki so privolili.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-chart"></i></div>
+            <h3>Poročila</h3>
+            <p>Nadzorna plošča, zadržanje strank, vrednost stranke (LTV), uspešnost trenerjev in zasedenost po lokacijah.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-pin"></i></div>
+            <h3>Več lokacij</h3>
+            <p>En klub, več fitnesov. Cenik in ekipa sta skupna, koledar, obiski in kapaciteta pa so ločeni po lokaciji.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-shield"></i></div>
+            <h3>Ekipa in vloge</h3>
+            <p>Lastnik, vodja, administracija, trener in računovodstvo — vsak vidi in ureja točno tisto, kar potrebuje.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHITE LABEL ============ -->
+    <section class="section brand" id="znamka">
+      <div class="wrap brand__inner">
+        <div class="brand__copy reveal">
+          <p class="kicker">White-label</p>
+          <h2>Vaša znamka.<br>Ne naša.</h2>
+          <p class="section__lead">Stranke vidijo vaš klub — ne programske opreme. Logotip, barva, domena in pošiljatelj e-pošte so vaši, na vsakem zaslonu, računu in sporočilu.</p>
+          <ul class="checks">
+            <li><b>Logotip in barva</b> na vmesniku, PDF-jih in e-pošti — s predogledom v živo</li>
+            <li><b>Lastna domena</b>, npr. app.vasklub.si, s certifikatom HTTPS samodejno</li>
+            <li><b>E-pošta v imenu kluba</b> od prve minute, lastna domena pošiljatelja po želji</li>
+            <li><b>SMS z imenom kluba</b> kot pošiljateljem</li>
+          </ul>
+
+          <div class="tuner" aria-label="Preizkusite svojo znamko">
+            <label class="tuner__field">
+              <span>Ime kluba</span>
+              <input id="club-name" type="text" value="Atlas Gym" maxlength="22" autocomplete="off" spellcheck="false">
+            </label>
+            <div class="tuner__field">
+              <span id="swatch-label">Barva znamke</span>
+              <div class="swatches" role="radiogroup" aria-labelledby="swatch-label">
+                <button role="radio" aria-checked="false" style="--s:#d7ff3a" data-color="#d7ff3a" aria-label="Limeta"></button>
+                <button role="radio" aria-checked="true" style="--s:#2563eb" data-color="#2563eb" aria-label="Modra"></button>
+                <button role="radio" aria-checked="false" style="--s:#ff5a36" data-color="#ff5a36" aria-label="Oranžna"></button>
+                <button role="radio" aria-checked="false" style="--s:#8b5cf6" data-color="#8b5cf6" aria-label="Vijolična"></button>
+                <button role="radio" aria-checked="false" style="--s:#10b981" data-color="#10b981" aria-label="Zelena"></button>
+                <button role="radio" aria-checked="false" style="--s:#f43f5e" data-color="#f43f5e" aria-label="Rožnata"></button>
+                <label class="swatch-custom" aria-label="Lastna barva"><input id="club-color" type="color" value="#2563eb"></label>
+              </div>
+            </div>
+            <p class="tuner__hint">Preizkusite — vse na tej strani, kar nosi znamko kluba, se spremeni.</p>
+          </div>
+        </div>
+
+        <div class="brand__preview reveal" data-club-theme>
+          <div class="phone">
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+              <div class="mail">
+                <div class="mail__from"><span class="app__clublogo" data-club-initial>A</span><div><b data-club-name>Atlas Gym</b><small>pozdravljeni@<span data-club-host>atlasgym.si</span></small></div></div>
+                <div class="mail__hero"><small>Vaša karta poteče čez 5 dni</small><b>Ostanite v ritmu, Eva.</b></div>
+                <p>Karta <b>3 mesece · 8 obiskov/mesec</b> velja do 15. 10. Podaljšate jo lahko s spodnjim gumbom ali na recepciji.</p>
+                <span class="mail__btn">Podaljšaj karto</span>
+                <small class="mail__foot">Ne želite več prejemati obvestil? Odjava</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="invoice">
+            <div class="invoice__top"><span class="app__clublogo" data-club-initial>A</span><div><b data-club-name>Atlas Gym</b><small>Predračun PR-2026-0318</small></div></div>
+            <div class="invoice__row"><span>Karta 3 mesece · 8 obiskov/mesec</span><b>189,00 €</b></div>
+            <div class="invoice__row"><span>Dobroimetje · 2 uri osebnega treninga</span><b>70,00 €</b></div>
+            <div class="invoice__total"><span>Za plačilo</span><b>259,00 €</b></div>
+            <div class="invoice__pay">
+              <svg class="qr" viewBox="0 0 29 29" aria-label="UPN QR koda (ponazoritev)" role="img"></svg>
+              <div><b>Plačajte z UPN QR</b><small>Skenirajte v mobilni banki ali plačajte s kartico.</small><span class="chip chip--club">Plačaj s kartico</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MONEY FLOW ============ -->
+    <section class="section money" id="denar">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="kicker">Računi in FURS</p>
+          <h2>Od predračuna do nove karte — brez enega ročnega koraka.</h2>
+          <p class="section__lead">Stranka plača predračun po UPN ali s kartico. Napni izda račun, ga davčno potrdi pri FURS, pošlje PDF in podaljša karto. Vi samo pogledate, da je vse zeleno.</p>
+        </div>
+
+        <ol class="flow reveal">
+          <li class="flow__step">
+            <span class="flow__n">01</span>
+            <h3>Predračun</h3>
+            <p>Samodejno pred iztekom karte, z UPN QR kodo in povezavo za plačilo s kartico.</p>
+          </li>
+          <li class="flow__step">
+            <span class="flow__n">02</span>
+            <h3>Plačilo</h3>
+            <p>Nakazilo ali Stripe. Plačilo se poveže s predračunom samo.</p>
+          </li>
+          <li class="flow__step">
+            <span class="flow__n">03</span>
+            <h3>Račun, potrjen pri FURS</h3>
+            <p>Izračun ZOI, potrditev, EOR na računu. Podatki za FURS se ob izdaji zamrznejo.</p>
+          </li>
+          <li class="flow__step">
+            <span class="flow__n">04</span>
+            <h3>Nova karta</h3>
+            <p>Karta se podaljša, stranka dobi račun po e-pošti, vi pa mir.</p>
+          </li>
+        </ol>
+
+        <div class="furs reveal">
+          <div class="furs__copy">
+            <h3>Davčno potrjevanje, ki ne pade.</h3>
+            <ul class="checks checks--tight">
+              <li>Potrdilo FURS (.p12) preverimo ob nalaganju: geslo, izdajatelj, davčna številka, veljavnost</li>
+              <li>Opozorila 60, 30 in 7 dni pred iztekom potrdila</li>
+              <li>Prijava poslovnega prostora za vsako lokacijo</li>
+              <li>Testni način s testnim okoljem FURS, dokler niste pripravljeni</li>
+              <li>Blagajnik z davčno številko na vsakem računu</li>
+            </ul>
+          </div>
+          <div class="receipt" aria-label="Primer potrjenega računa">
+            <div class="receipt__h"><b>RAČUN 2026-C1-0142</b><span class="badge-ok">Potrjen pri FURS</span></div>
+            <dl>
+              <dt>Poslovni prostor</dt><dd>C1 · Lokacija Center</dd>
+              <dt>Blagajnik</dt><dd>Nina Kovač</dd>
+              <dt>Znesek z DDV</dt><dd>259,00 €</dd>
+              <dt>ZOI</dt><dd class="mono">5e9c0b7a1f…42d8</dd>
+              <dt>EOR</dt><dd class="mono">7c1e3b2d-…-a90b</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SALES / CRM ============ -->
+    <section class="section split split--wide">
+      <div class="wrap split__inner">
+        <div class="split__copy reveal">
+          <p class="kicker">Prodaja</p>
+          <h2>Kontakt postane stranka. Stranka ostane.</h2>
+          <p class="section__lead">Spletni obrazec na vaši strani pošlje kontakt naravnost na tablo. Posvet, ponudba, podpis pogodbe — in ob prvem podpisu ali nakupu se kontakt sam prepiše v stranko, s termini vred.</p>
+          <ul class="checks">
+            <li><b>Table in stolpci po vaši meri</b>, s kontrolnimi seznami in oznakami</li>
+            <li><b>Opozorilo ob padcu obiskov</b>, preden stranka tiho odide</li>
+            <li><b>Ponovna aktivacija</b> nekdanjih strank z enim seznamom</li>
+            <li><b>Odgovorna oseba</b> na vsaki kartici, da nič ne obvisi</li>
+          </ul>
+        </div>
+        <div class="board reveal" data-club-theme aria-label="Prikaz prodajne table">
+          <div class="board__col">
+            <h4>Nov kontakt <em>4</em></h4>
+            <div class="kcard"><b>Tjaša M.</b><small>Spletni obrazec · danes</small><span class="chip chip--club">Hujšanje</span></div>
+            <div class="kcard"><b>Marko V.</b><small>Instagram · včeraj</small></div>
+          </div>
+          <div class="board__col">
+            <h4>Posvet <em>3</em></h4>
+            <div class="kcard kcard--move"><b>Ana R.</b><small>Pon 9.30 · Maja</small><div class="kprog"><i style="--p:66%"></i></div></div>
+            <div class="kcard"><b>David L.</b><small>Sre 18.00 · Tim</small></div>
+          </div>
+          <div class="board__col">
+            <h4>Ponudba <em>2</em></h4>
+            <div class="kcard"><b>Petra S.</b><small>Predračun poslan</small><span class="chip">259 €</span></div>
+          </div>
+          <div class="board__col board__col--won">
+            <h4>Stranka <em>✓</em></h4>
+            <div class="kcard"><b>Rok Z.</b><small>Pogodba podpisana</small><span class="chip chip--ok">Nova karta</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MEMBERSHIP LOGIC ============ -->
+    <section class="section split split--rev">
+      <div class="wrap split__inner">
+        <div class="split__copy reveal">
+          <p class="kicker">Karte, ki se računajo same</p>
+          <h2>Shranimo dejstva. Vse drugo izračunamo.</h2>
+          <p class="section__lead">Stanje karte, datum izteka, preostali obiski, vrednost stranke in dolg se izračunajo iz kart, obiskov in računov — vsakič znova. Zato se nikoli ne razidejo in jih nikoli ne popravljate ročno.</p>
+          <ul class="checks">
+            <li><b>Vključeni obiski</b> na mesec ali za celotno karto — ali neomejeno</li>
+            <li><b>Ure osebnega treninga</b> na mesec, meseci tečejo od dneva nakupa</li>
+            <li><b>Zamrznitev</b> premakne iztek; <b>odsotnost</b> le zabeleži razlog</li>
+          </ul>
+        </div>
+        <div class="mcard reveal" data-club-theme>
+          <div class="mcard__top">
+            <div><small>Karta</small><b>3 mesece · 8 obiskov/mesec</b></div>
+            <span class="badge-ok">Veljavna</span>
+          </div>
+          <div class="mcard__meter">
+            <div class="mcard__label"><span>Obiski ta mesec</span><b>5 / 8</b></div>
+            <div class="meter"><i style="--p:62.5%"></i></div>
+          </div>
+          <div class="mcard__meter">
+            <div class="mcard__label"><span>Osebni trening ta mesec</span><b>1 / 2 uri</b></div>
+            <div class="meter"><i style="--p:50%"></i></div>
+          </div>
+          <div class="timeline" aria-label="Časovnica karte z zamrznitvijo">
+            <div class="timeline__bar">
+              <i class="seg seg--on" style="--w:44%"></i>
+              <i class="seg seg--freeze" style="--w:16%"></i>
+              <i class="seg seg--on seg--rest" style="--w:40%"></i>
+            </div>
+            <div class="timeline__labels"><span>15. 7.</span><span class="freeze">❄ +14 dni</span><span>29. 10.</span></div>
+          </div>
+          <div class="mcard__credit"><span>Dobroimetje</span><b>3 obiski · 2 uri PT</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MESSAGING ============ -->
+    <section class="section split">
+      <div class="wrap split__inner">
+        <div class="split__copy reveal">
+          <p class="kicker">Sporočila</p>
+          <h2>Pravo sporočilo, pravi osebi, ob pravem času.</h2>
+          <p class="section__lead">Predloge za e-pošto, SMS in push. Opomnike in avtomatizacije nastavite enkrat, Napni pa jih pošilja sam — samo tistim, ki so za ta kanal in namen dali privolitev.</p>
+          <ul class="checks">
+            <li><b>Opomnik pred terminom</b> in pred iztekom karte</li>
+            <li><b>Potrdilo plačila</b> z računom v priponki</li>
+            <li><b>Privolitve</b> po kanalu in namenu, z zgodovino kot dokazom</li>
+            <li><b>Odjava</b> z enim klikom v vsakem sporočilu</li>
+          </ul>
+        </div>
+        <div class="chat reveal" data-club-theme>
+          <div class="sms"><small class="sms__from" data-club-name>Atlas Gym</small><p>Pozdravljeni, Luka! Jutri ob 7.00 vas čaka osebni trening z Majo. Se vidimo 💪</p><time>Danes 18.00</time></div>
+          <div class="sms sms--push"><small class="sms__from"><span data-club-name>Atlas Gym</span> · push</small><p>Vaša karta poteče čez 5 dni. Podaljšate jo lahko v enem kliku.</p><time>Danes 09.00</time></div>
+          <div class="sms sms--mail"><small class="sms__from">E-pošta</small><p><b>Hvala za plačilo — račun 2026-C1-0142 je v priponki.</b></p><time>Včeraj</time></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ADD-ONS ============ -->
+    <section class="section addons">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="kicker">Dodatni moduli</p>
+          <h2>Rastejo skupaj z vašim klubom.</h2>
+          <p class="section__lead">Vklopite jih, ko jih potrebujete. Izklopljen modul v bazi vašega kluba nima niti tabele.</p>
+        </div>
+        <div class="addon-grid">
+          <article class="addon reveal"><span class="addon__ic">€</span><h3>Računovodstvo</h3><p>Bančni izpiski, stroški, prejeti računi, razmejitev prihodkov in izvoz za računovodjo ob koncu meseca.</p></article>
+          <article class="addon reveal"><span class="addon__ic">⏱</span><h3>Ekipa</h3><p>Delovni dnevnik trenerjev, izplačila in potni stroški, brez tabel ob koncu meseca.</p></article>
+          <article class="addon reveal"><span class="addon__ic">↻</span><h3>Trainerize</h3><p>Sinhronizacija obiskov in napredka pri vajah ter mesečna poročila za stranke.</p></article>
+          <article class="addon reveal"><span class="addon__ic">✦</span><h3>Prehrana z AI</h3><p>Vprašalnik, prehranski načrti, analiza dnevnika, pogovor in tedenska poročila.</p></article>
+          <article class="addon reveal"><span class="addon__ic">◎</span><h3>AI asistent</h3><p>Vprašajte v svojem jeziku: »Komu poteče karta ta teden?« in dobite odgovor iz svojih podatkov.</p></article>
+          <article class="addon reveal"><span class="addon__ic">▲</span><h3>Lestvica</h3><p>Javna lestvica v živo za zaslon v fitnesu. Malo zdrave tekmovalnosti.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ONBOARDING ============ -->
+    <section class="section onboard" id="postavitev">
+      <div class="wrap onboard__inner">
+        <div class="onboard__copy">
+          <div class="reveal">
+            <p class="kicker">Na ključ</p>
+            <h2>Od nič do »v živo« brez enega klica IT-ju.</h2>
+            <p class="section__lead">Klub postavimo v nekaj minutah. Vodič vas popelje skozi nastavitve v testnem načinu — računi se ne potrjujejo zares, sporočila dobi samo ekipa. Ko je seznam zelen, pritisnete »V živo«.</p>
+          </div>
+          <ol class="steps">
+            <li class="reveal"><span>1</span><div><h3>Postavitev kluba</h3><p>Lastna baza, prijava in naslov <b>vasklub.napni.si</b> — takoj z varno povezavo.</p></div></li>
+            <li class="reveal"><span>2</span><div><h3>Vodič v testnem načinu</h3><p>Podatki podjetja, znamka, pravna besedila, potrdilo FURS, Stripe, e-pošta, SMS, cenik in ekipa.</p></div></li>
+            <li class="reveal"><span>3</span><div><h3>Uvoz obstoječih podatkov</h3><p>Excel ali CSV: povezovanje stolpcev, predogled napak in poskusni uvoz, preden se karkoli zapiše.</p></div></li>
+            <li class="reveal"><span>4</span><div><h3>V živo</h3><p>Vsaka zmožnost se odklene, ko so izpolnjeni pogoji. Prej ni mogoče nič pomotoma poslati ali izdati.</p></div></li>
+          </ol>
+        </div>
+        <div class="golive reveal" aria-label="Seznam pred zagonom">
+          <div class="golive__h"><b>Pripravljeni na zagon</b><span class="golive__pct"><span id="golive-count">0</span>/6</span></div>
+          <ul>
+            <li data-i="0"><i></i><div><b>Podatki podjetja</b><small>Davčna in matična številka, TRR</small></div></li>
+            <li data-i="1"><i></i><div><b>Znamka</b><small>Logotip, podpis, barva</small></div></li>
+            <li data-i="2"><i></i><div><b>Potrdilo FURS</b><small>Veljavno do 3. 2. 2028 · prostor prijavljen</small></div></li>
+            <li data-i="3"><i></i><div><b>Spletna plačila</b><small>Stripe povezan</small></div></li>
+            <li data-i="4"><i></i><div><b>Pogodba in pristopna izjava</b><small>Različica besedila potrjena</small></div></li>
+            <li data-i="5"><i></i><div><b>Uvoz strank</b><small>412 strank · 0 napak</small></div></li>
+          </ul>
+          <button class="btn btn--volt btn--block golive__btn" id="golive-btn" disabled>V živo</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECURITY ============ -->
+    <section class="section security" id="varnost">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="kicker">Varnost in GDPR</p>
+          <h2>Podatki o zdravju vaših strank si zaslužijo več kot geslo.</h2>
+        </div>
+        <div class="sec-grid">
+          <div class="sec reveal"><b>1 baza = 1 klub</b><p>Vsak klub ima svojo bazo in svojo prijavo. Podatki enega kluba drugemu niso dosegljivi niti po pomoti.</p></div>
+          <div class="sec reveal"><b>Podatki v EU</b><p>Gostovanje v Frankfurtu, ves promet šifriran, varnostne kopije z obnovitvijo na točko v času.</p></div>
+          <div class="sec reveal"><b>Brez vpogleda brez dovoljenja</b><p>Ekipa Napni vaših podatkov ne vidi. Za podporo nam lastnik odobri časovno omejen dostop, vsak korak pa ostane v dnevniku.</p></div>
+          <div class="sec reveal"><b>Šifrirane skrivnosti</b><p>Potrdila FURS in ključi integracij so zapečateni s Cloud KMS. Do vašega ključa Stripe sploh ne pridemo.</p></div>
+          <div class="sec reveal"><b>Privolitve kot dokaz</b><p>Vsak »da« in »ne« po kanalu in namenu ostane zabeležen z datumom — vaš dokaz po GDPR.</p></div>
+          <div class="sec reveal"><b>Vaši podatki, vaš izhod</b><p>Celoten izvoz (baza, CSV, dokumenti) in izbris z enim ukazom. Nikoli niste ujeti.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ORIGIN / STATS ============ -->
+    <section class="section origin">
+      <div class="wrap"><div class="origin__inner reveal">
+        <blockquote>
+          Napni ni nastal na tabli v pisarni. Zrasel je iz aplikacije, ki vsak dan vodi pravi fitnes v Ljubljani — z vsemi računi, pogodbami in opomniki vred.
+        </blockquote>
+        <dl class="stats">
+          <div><dt><span class="num" data-count="15">15</span></dt><dd>modulov</dd></div>
+          <div><dt><span class="num" data-count="5">5</span></dt><dd>vlog v ekipi</dd></div>
+          <div><dt><span class="num" data-count="3">3</span></dt><dd>kanali sporočil</dd></div>
+          <div><dt><span class="num">0</span></dt><dd>strežnikov za vzdrževanje</dd></div>
+        </dl>
+      </div></div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="section pricing" id="cenik">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="kicker">Cenik</p>
+          <h2>Plačate osnovo in tisto, kar vklopite.</h2>
+          <p class="section__lead">Brez stroškov namestitve in brez strežnikov. Cene objavimo ob splošni dostopnosti — prvi klubi dobijo pogoje pilotnega kluba.</p>
+        </div>
+        <div class="plans">
+          <article class="plan reveal">
+            <h3>Osnova</h3>
+            <p class="plan__sub">Vse, kar klub potrebuje vsak dan.</p>
+            <ul class="checks checks--tight">
+              <li>Stranke, plačniki, cenik in karte</li>
+              <li>Koledar, obiski, osebni treningi</li>
+              <li>Računi, predračuni, UPN QR</li>
+              <li>Davčno potrjevanje FURS</li>
+              <li>Pogodbe in e-podpisi</li>
+              <li>Prodaja, sporočila, poročila</li>
+              <li>Vaša znamka in domena</li>
+            </ul>
+          </article>
+          <article class="plan plan--hot reveal">
+            <span class="plan__flag">Zgodnji dostop</span>
+            <h3>Pilotni klub</h3>
+            <p class="plan__sub">Za prve klube, ki gredo z nami v živo.</p>
+            <ul class="checks checks--tight">
+              <li>Vse iz Osnove</li>
+              <li>Osebna postavitev in uvoz podatkov z nami</li>
+              <li>Neposredna linija do ekipe, ki gradi Napni</li>
+              <li>Vpliv na to, kaj gradimo naslednje</li>
+              <li>Pogoji pilotnega kluba, zaklenjeni vnaprej</li>
+            </ul>
+            <a class="btn btn--volt btn--block" href="#kontakt">Prijavite klub</a>
+          </article>
+          <article class="plan reveal">
+            <h3>Dodatki</h3>
+            <p class="plan__sub">Vklopite po modulih, kadarkoli.</p>
+            <ul class="checks checks--tight">
+              <li>Spletna plačila (Stripe)</li>
+              <li>Računovodstvo</li>
+              <li>Ekipa in izplačila</li>
+              <li>Trainerize</li>
+              <li>Prehrana z AI</li>
+              <li>AI asistent</li>
+              <li>Lestvica</li>
+            </ul>
+          </article>
+        </div>
+        <div class="roadmap reveal">
+          <b>Na poti</b>
+          <span>Ponavljajoče bremenitve (SEPA)</span>
+          <span>Portal za stranke</span>
+          <span>Prijava na recepciji in vrata</span>
+          <span>Urejanje predlog besedil</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="vprasanja">
+      <div class="wrap faq__inner">
+        <div class="section__head reveal">
+          <p class="kicker">Vprašanja</p>
+          <h2>Pogosta vprašanja</h2>
+        </div>
+        <div class="faq__list">
+          <details class="reveal">
+            <summary>Ali moram karkoli namestiti?</summary>
+            <p>Ne. Napni teče v brskalniku na računalniku, tablici in telefonu. Strežnike, posodobitve in varnostne kopije urejamo mi.</p>
+          </details>
+          <details class="reveal">
+            <summary>Kako hitro lahko začnemo?</summary>
+            <p>Klub je postavljen v nekaj minutah. Koliko časa traja do »v živo«, je odvisno predvsem od vaših podatkov: potrdila FURS, pravnih besedil in uvoza strank. Pri tem vam pomagamo.</p>
+          </details>
+          <details class="reveal">
+            <summary>Lahko prenesemo podatke iz obstoječega programa?</summary>
+            <p>Da. Stranke, plačnike, veljavne karte, cenik in ekipo uvozite iz Excela ali CSV-ja. Pred uvozom vidite predogled z napakami in naredite poskusni uvoz. Za znane izvoze drugih programov pripravimo preslikavo.</p>
+          </details>
+          <details class="reveal">
+            <summary>Ali Napni res izdaja davčno potrjene račune?</summary>
+            <p>Da. Naložite svoje potrdilo FURS, prijavite poslovni prostor za vsako lokacijo in Napni potrjuje račune z ZOI in EOR. Dokler ste v testnem načinu, gredo računi v testno okolje FURS.</p>
+          </details>
+          <details class="reveal">
+            <summary>Imamo več lokacij. Ali to deluje?</summary>
+            <p>Da. En klub ima lahko več lokacij s svojim naslovom, kapaciteto, koledarjem in poslovnim prostorom za FURS. Cenik in ekipa sta skupna, karta pa velja na vseh lokacijah, razen če jo omejite.</p>
+          </details>
+          <details class="reveal">
+            <summary>Kdo ima dostop do podatkov naših strank?</summary>
+            <p>Samo vaša ekipa, glede na vloge, ki jih določite. Ekipa Napni do podatkov nima dostopa, razen če ga lastnik kluba časovno omejeno odobri za podporo — in vsak korak je zabeležen v dnevniku kluba.</p>
+          </details>
+          <details class="reveal">
+            <summary>Kaj se zgodi, če odidemo?</summary>
+            <p>Dobite celoten izvoz: bazo, CSV datoteke in vse dokumente. Nato vašo bazo, prijavo in skrivnosti izbrišemo. Vaši podatki so vaši.</p>
+          </details>
+          <details class="reveal">
+            <summary>Ali lahko uporabljamo svojo domeno?</summary>
+            <p>Da. Takoj dobite naslov <b>vasklub.napni.si</b>, kadarkoli pa lahko dodate lastno domeno, npr. app.vasklub.si. Certifikat HTTPS se uredi samodejno.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" id="kontakt">
+      <div class="wrap"><div class="cta__inner reveal">
+        <h2>Napnimo vaš klub.</h2>
+        <p>Pokažemo vam Napni na vaših primerih — od nove stranke do potrjenega računa — v 30 minutah.</p>
+        <div class="cta__actions">
+          <a class="btn btn--dark btn--lg" data-mail data-subject="Predstavitev Napni" href="mailto:info@napni.si?subject=Predstavitev%20Napni">Rezervirajte predstavitev <span aria-hidden="true">→</span></a>
+          <a class="btn btn--outline-dark btn--lg" data-mail data-subject="Pilotni klub Napni" href="mailto:info@napni.si?subject=Pilotni%20klub%20Napni">Prijavite se kot pilotni klub</a>
+        </div>
+        <p class="cta__mail">ali pišite na <a data-mail data-plain href="mailto:info@napni.si">info@napni.si</a></p>
+      </div></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <a class="logo" href="#" aria-label="Napni — na vrh">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="var(--volt)"/><path d="M9 23V9h3.6l6.2 8.6V9H23v14h-3.5l-6.3-8.7V23z" fill="#0a0b0d"/></svg>
+        <span class="logo__word">napni</span>
+      </a>
+      <p>Platforma na ključ za fitnese in vadbene studie. Narejeno v Sloveniji.</p>
+      <nav aria-label="Noga">
+        <a href="#funkcije">Funkcije</a>
+        <a href="#denar">Računi in FURS</a>
+        <a href="#varnost">Varnost</a>
+        <a href="#cenik">Cenik</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <small>© <span id="year">2026</span> Napni. Imena strank, trenerjev in zneski na tej strani so ponazoritve.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
