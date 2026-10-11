@@ -146,6 +146,20 @@
     qr.innerHTML = `<path d="${d}" fill="#111214"/><path d="${finders}" fill="#111214" fill-rule="evenodd"/>`;
   }
 
+  /* ---------- illustrative visits heatmap (weekday × 2-hour slot, 6–22) ---------- */
+  const heat = document.querySelector(".heat");
+  if (heat) {
+    const slot = [0.35, 0.3, 0.2, 0.25, 0.45, 0.95, 0.8, 0.3]; // 6, 8, … 20
+    const day = [1, 0.95, 1, 0.9, 0.75, 0.45, 0.25];           // Mon … Sun
+    let cells = "";
+    day.forEach((d, di) => slot.forEach((s, si) => {
+      const weekendShift = di >= 5 ? [0.2, 0.5, 0.7, 0.6, 0.4, 0.3, 0.2, 0.1][si] : s;
+      const v = Math.min(1, Math.max(0.06, weekendShift * d + ((di * 7 + si * 3) % 5) * 0.03));
+      cells += `<i style="--v:${v.toFixed(2)}"></i>`;
+    }));
+    heat.innerHTML = cells;
+  }
+
   /* ---------- go-live checklist ---------- */
   const golive = document.querySelector(".golive");
   if (golive) {

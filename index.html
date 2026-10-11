@@ -32,6 +32,7 @@
         <a href="#funkcije">Funkcije</a>
         <a href="#znamka">Vaša znamka</a>
         <a href="#denar">Računi in FURS</a>
+        <a href="#blagajna">Blagajna</a>
         <a href="#postavitev">Postavitev</a>
         <a href="#varnost">Varnost</a>
         <a href="#vprasanja">Vprašanja</a>
@@ -43,6 +44,8 @@
       <a href="#funkcije">Funkcije</a>
       <a href="#znamka">Vaša znamka</a>
       <a href="#denar">Računi in FURS</a>
+      <a href="#blagajna">Blagajna</a>
+      <a href="#porocila">Poročila</a>
       <a href="#postavitev">Postavitev</a>
       <a href="#varnost">Varnost</a>
       <a href="#vprasanja">Vprašanja</a>
@@ -92,6 +95,7 @@
                   <li><i class="ic ic-check"></i>Obiski</li>
                   <li><i class="ic ic-board"></i>Kontakti</li>
                   <li><i class="ic ic-doc"></i>Računi</li>
+                  <li><i class="ic ic-till"></i>Blagajna</li>
                   <li><i class="ic ic-tag"></i>Cenik</li>
                   <li><i class="ic ic-msg"></i>Sporočila</li>
                   <li><i class="ic ic-chart"></i>Poročila</li>
@@ -106,10 +110,10 @@
                   <span class="chip chip--club">+ Nova stranka</span>
                 </div>
                 <div class="kpis">
-                  <div class="kpi"><small>Veljavne karte</small><b data-count="248">248</b><em class="up">+12 ta mesec</em></div>
-                  <div class="kpi"><small>Obiski danes</small><b data-count="63">63</b><em>od 140 mest</em></div>
-                  <div class="kpi"><small>Izdani računi · okt.</small><b>18.420 €</b><em class="up">+8 %</em></div>
-                  <div class="kpi"><small>Karte potečejo v 7 dneh</small><b data-count="12">12</b><em class="warn">opomniki poslani</em></div>
+                  <div class="kpi"><small>Promet · oktober</small><b>18.420 €</b><em class="up">+8 % kot septembra</em></div>
+                  <div class="kpi"><small>Veljavne karte</small><b data-count="248">248</b><em class="warn">12 poteče v 7 dneh</em></div>
+                  <div class="kpi"><small>Obiski danes</small><b data-count="63">63</b><em>še 9 terminov</em></div>
+                  <div class="kpi"><small>Novi kontakti · okt.</small><b data-count="14">14</b><em class="up">6 postalo strank</em></div>
                 </div>
                 <div class="app__cols">
                   <div class="panel">
@@ -178,8 +182,8 @@
               <li>E-podpis, shranjeno pri stranki</li>
               <li>Plačan predračun sam postane račun in nova karta</li>
               <li>Stanje karte se izračuna samo, vsak trenutek</li>
-              <li>Samodejni opomniki po e-pošti, SMS-ju in push</li>
-              <li>Poročila v živo: zadržanje, LTV, zasedenost</li>
+              <li>Samodejni opomniki pred terminom in iztekom karte</li>
+              <li>Poročila v živo: promet, podaljšanja, vrednost stranke</li>
             </ul>
           </div>
         </div>
@@ -226,32 +230,37 @@
             <div class="card__ic"><i class="ic ic-doc"></i></div>
             <h3>Računi, predračuni in davčno potrjevanje</h3>
             <p>Predračun z UPN QR kodo, plačilo po nakazilu ali s kartico, nato račun, potrjen pri FURS z ZOI in EOR. PDF z vašim logotipom gre stranki po e-pošti.</p>
-            <ul class="tags"><li>FURS</li><li>UPN QR</li><li>Dobropisi</li><li>Blagajna</li><li>Darilni boni</li></ul>
+            <ul class="tags"><li>FURS</li><li>UPN QR</li><li>Dobropisi</li><li>Povezava za plačilo</li></ul>
           </article>
           <article class="card reveal">
             <div class="card__ic"><i class="ic ic-card"></i></div>
             <h3>Spletna plačila</h3>
-            <p>Povežite svoj Stripe z enim klikom. Povezava za plačilo v sporočilu, plačilo samo knjiži račun.</p>
+            <p>Povežite svoj Stripe z enim klikom. Stranka plača predračun s kartico, Napni izda račun, potrdi ga pri FURS in podaljša karto.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-till"></i></div>
+            <h3>Blagajna</h3>
+            <p>Hitra prodaja na recepciji: ploščice cenika, gotovina z vračilom, kartica ali nakazilo, kupec brez imena in dnevni promet za zaključek.</p>
           </article>
           <article class="card reveal">
             <div class="card__ic"><i class="ic ic-pen"></i></div>
             <h3>Pogodbe in e-podpisi</h3>
-            <p>Pogodba o sodelovanju in pristopna izjava se podpišeta na zaslonu. Vsak podpisan dokument kaže na točno določeno različico besedila.</p>
+            <p>Pogodba in pristopna izjava, podpisani s prstom na tablici ali prek povezave. Shranjeno je točno podpisano besedilo, s časom in prstnim odtisom PDF-ja.</p>
           </article>
           <article class="card reveal">
             <div class="card__ic"><i class="ic ic-board"></i></div>
             <h3>Prodaja in skrb za stranke</h3>
-            <p>Table za kontakte in obstoječe stranke, spletni obrazci, kontrolni seznami, oznake. Napni opozori, ko stranka začne prihajati redkeje.</p>
+            <p>Tabla kontaktov s spletnim obrazcem za vašo stran. Kontakt postane stranka sam, ko plača predračun ali podpiše pogodbo.</p>
           </article>
           <article class="card reveal">
             <div class="card__ic"><i class="ic ic-msg"></i></div>
-            <h3>Sporočila in avtomatizacije</h3>
-            <p>E-pošta, SMS in push s predlogami. Opomniki pred iztekom karte, pred terminom in po plačilu — samo tistim, ki so privolili.</p>
+            <h3>Opomniki in sporočila</h3>
+            <p>Samodejni opomniki po e-pošti pred terminom in pred iztekom karte, z odjavo v enem kliku in dnevnikom pri vsaki stranki.</p>
           </article>
           <article class="card reveal">
             <div class="card__ic"><i class="ic ic-chart"></i></div>
             <h3>Poročila</h3>
-            <p>Nadzorna plošča, zadržanje strank, vrednost stranke (LTV), uspešnost trenerjev in zasedenost po lokacijah.</p>
+            <p>Nadzorna plošča za danes in mesec. Promet, podaljšanja, vrednost stranke, prodaja, trenerji in kdaj prihajajo.</p>
           </article>
           <article class="card reveal">
             <div class="card__ic"><i class="ic ic-pin"></i></div>
@@ -262,6 +271,16 @@
             <div class="card__ic"><i class="ic ic-shield"></i></div>
             <h3>Ekipa in vloge</h3>
             <p>Lastnik, vodja, administracija, trener in računovodstvo — vsak vidi in ureja točno tisto, kar potrebuje.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-upload"></i></div>
+            <h3>Uvoz iz Excela</h3>
+            <p>Stranke in veljavne karte iz .xlsx ali CSV, s predogledom napak in podvojenih. Uvoz lahko prekličete.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-download"></i></div>
+            <h3>Izvoz vseh podatkov</h3>
+            <p>Lastnik kadarkoli prenese ZIP z vsemi tabelami in dokumenti. Vaši podatki ostanejo vaši.</p>
           </article>
         </div>
       </div>
@@ -278,7 +297,7 @@
             <li><b>Logotip in barva</b> na vmesniku, PDF-jih in e-pošti — s predogledom v živo</li>
             <li><b>Lastna domena</b>, npr. app.vasklub.si, s certifikatom HTTPS samodejno</li>
             <li><b>E-pošta v imenu kluba</b> od prve minute, lastna domena pošiljatelja po želji</li>
-            <li><b>SMS z imenom kluba</b> kot pošiljateljem</li>
+            <li><b>SMS z imenom kluba</b> kot pošiljateljem <span class="soon">kmalu</span></li>
           </ul>
 
           <div class="tuner" aria-label="Preizkusite svojo znamko">
@@ -348,7 +367,7 @@
           <li class="flow__step">
             <span class="flow__n">02</span>
             <h3>Plačilo</h3>
-            <p>Nakazilo ali Stripe. Plačilo se poveže s predračunom samo.</p>
+            <p>Nakazilo ali kartica prek povezave, ki ne poteče. Plačilo se poveže s predračunom samo.</p>
           </li>
           <li class="flow__step">
             <span class="flow__n">03</span>
@@ -367,7 +386,8 @@
             <h3>Davčno potrjevanje, ki ne pade.</h3>
             <ul class="checks checks--tight">
               <li>Potrdilo FURS (.p12) preverimo ob nalaganju: geslo, izdajatelj, davčna številka, veljavnost</li>
-              <li>Opozorila 60, 30 in 7 dni pred iztekom potrdila</li>
+              <li>Opozorilo po e-pošti 60, 30, 7 in 1 dan pred iztekom potrdila</li>
+              <li>Če FURS ne odgovori, račun vseeno izdate — Napni ga pošlje naknadno, sam</li>
               <li>Prijava poslovnega prostora za vsako lokacijo</li>
               <li>Testni način s testnim okoljem FURS, dokler niste pripravljeni</li>
               <li>Blagajnik z davčno številko na vsakem računu</li>
@@ -387,45 +407,118 @@
       </div>
     </section>
 
-    <!-- ============ SALES / CRM ============ -->
-    <section class="section split split--wide">
+    <!-- ============ TILL ============ -->
+    <section class="section split split--rev" id="blagajna">
       <div class="wrap split__inner">
         <div class="split__copy reveal">
-          <p class="kicker">Prodaja</p>
-          <h2>Kontakt postane stranka. Stranka ostane.</h2>
-          <p class="section__lead">Spletni obrazec na vaši strani pošlje kontakt naravnost na tablo. Posvet, ponudba, podpis pogodbe — in ob prvem podpisu ali nakupu se kontakt sam prepiše v stranko, s termini vred.</p>
+          <p class="kicker">Blagajna</p>
+          <h2>Recepcija v treh klikih.</h2>
+          <p class="section__lead">Dnevna karta in dve vodi — ali nova karta za stranko, ki jo plača njeno podjetje. Vsaka prodaja na blagajni gre skozi isto izdajo kot računi, zato so številčenje, FURS, plačniki in karte vedno usklajeni.</p>
           <ul class="checks">
-            <li><b>Table in stolpci po vaši meri</b>, s kontrolnimi seznami in oznakami</li>
-            <li><b>Opozorilo ob padcu obiskov</b>, preden stranka tiho odide</li>
-            <li><b>Ponovna aktivacija</b> nekdanjih strank z enim seznamom</li>
-            <li><b>Odgovorna oseba</b> na vsaki kartici, da nič ne obvisi</li>
+            <li><b>Cenik kot ploščice</b> — članarine, storitve, izdelki — in iskanje, kjer Enter doda prvi zadetek</li>
+            <li><b>Gotovina, kartica ali nakazilo</b>; pri gotovini Napni izračuna vračilo</li>
+            <li><b>Končni kupec</b> za hiter nakup brez imena; karta pa vedno dobi svojo stranko</li>
+            <li><b>Danes</b>: promet po načinu plačila in »prejeto na blagajni« za zaključek predala</li>
+            <li><b>Na blagajni</b> s profila stranke odpre blagajno z izbrano stranko in njenim plačnikom</li>
           </ul>
         </div>
-        <div class="board reveal" data-club-theme aria-label="Prikaz prodajne table">
-          <div class="board__col">
-            <h4>Nov kontakt <em>4</em></h4>
-            <div class="kcard"><b>Tjaša M.</b><small>Spletni obrazec · danes</small><span class="chip chip--club">Hujšanje</span></div>
-            <div class="kcard"><b>Marko V.</b><small>Instagram · včeraj</small></div>
+        <div class="till reveal" data-club-theme aria-label="Prikaz blagajne">
+          <div class="till__menu">
+            <div class="till__search">Išči v ceniku …</div>
+            <small>Članarine</small>
+            <div class="tiles"><span class="tile">Mesečna karta<b>59 €</b></span><span class="tile">3 mesece · 8 obiskov<b>189 €</b></span></div>
+            <small>Storitve</small>
+            <div class="tiles"><span class="tile tile--on">Dnevna karta<b>10 €</b><em>1</em></span><span class="tile">Osebni trening<b>35 €</b></span></div>
+            <small>Izdelki</small>
+            <div class="tiles"><span class="tile tile--on">Voda<b>2,50 €</b><em>2</em></span><span class="tile">Proteinska ploščica<b>3 €</b></span><span class="tile">Brisača<b>5 €</b></span></div>
           </div>
-          <div class="board__col">
-            <h4>Posvet <em>3</em></h4>
-            <div class="kcard kcard--move"><b>Ana R.</b><small>Pon 9.30 · Maja</small><div class="kprog"><i style="--p:66%"></i></div></div>
-            <div class="kcard"><b>David L.</b><small>Sre 18.00 · Tim</small></div>
-          </div>
-          <div class="board__col">
-            <h4>Ponudba <em>2</em></h4>
-            <div class="kcard"><b>Petra S.</b><small>Predračun poslan</small><span class="chip">259 €</span></div>
-          </div>
-          <div class="board__col board__col--won">
-            <h4>Stranka <em>✓</em></h4>
-            <div class="kcard"><b>Rok Z.</b><small>Pogodba podpisana</small><span class="chip chip--ok">Nova karta</span></div>
+          <div class="till__receipt">
+            <div class="till__buyer"><span>Kupec</span><b>Končni kupec</b></div>
+            <div class="till__line"><span>Dnevna karta</span><em>1 ×</em><b>10,00 €</b></div>
+            <div class="till__line"><span>Voda</span><em>2 ×</em><b>5,00 €</b></div>
+            <div class="till__total"><span>Skupaj</span><b>15,00 €</b></div>
+            <div class="till__pay"><span class="on">Gotovina</span><span>Kartica</span><span>Nakazilo</span></div>
+            <div class="till__change"><span>Prejeto 20,00 €</span><b>Vračilo 5,00 €</b></div>
+            <span class="till__btn">Izdaj račun</span>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ============ SALES / CRM ============ -->
+    <section class="section split split--wide" id="prodaja">
+      <div class="wrap split__inner">
+        <div class="split__copy reveal">
+          <p class="kicker">Prodaja</p>
+          <h2>Kontakt postane stranka. Sam.</h2>
+          <p class="section__lead">Spletni obrazec na vaši strani pošlje kontakt naravnost v stolpec »Nov«, klub pa dobi e-pošto. Posvet, predračun, podpis — in ko kontakt plača ali podpiše, postane stranka, s terminom in privolitvijo vred.</p>
+          <ul class="checks">
+            <li><b>Obrazec za vašo spletno stran</b> kot povezava ali koda za vstavljanje; ponovna prijava se doda k obstoječemu kontaktu</li>
+            <li><b>Povleci in spusti</b> med stolpci, filter »Moji kontakti«, iskanje po imenu, e-pošti ali telefonu</li>
+            <li><b>Kartice brez aktivnosti</b> po treh dneh oranžno pokažejo, kako dolgo že čakajo</li>
+            <li><b>Naslednji korak z enim klikom</b>: rezerviraj posvet, pripravi predračun, pošlji v podpis</li>
+            <li><b>Pridobljeni in izgubljeni</b> na svojih seznamih — izgubljenega vrnete na tablo</li>
+          </ul>
+        </div>
+        <div class="board reveal" data-club-theme aria-label="Prikaz prodajne table">
+          <div class="board__col">
+            <h4>Nov <em>4</em></h4>
+            <div class="kcard"><b>Tjaša M.</b><small>Spletni obrazec · danes</small><span class="chip chip--club">Hujšanje</span></div>
+            <div class="kcard"><b>Marko V.</b><small>Spletni obrazec</small><span class="age">4 dni</span></div>
+          </div>
+          <div class="board__col">
+            <h4>V stiku <em>3</em></h4>
+            <div class="kcard"><b>David L.</b><small>Klic · včeraj · Tim</small></div>
+            <div class="kcard"><b>Sara P.</b><small>E-pošta · danes</small></div>
+          </div>
+          <div class="board__col">
+            <h4>Posvet <em>2</em></h4>
+            <div class="kcard kcard--move"><b>Ana R.</b><small>Pon 9.30 · Maja</small><div class="kprog"><i style="--p:66%"></i></div></div>
+          </div>
+          <div class="board__col">
+            <h4>Ponudba <em>2</em></h4>
+            <div class="kcard"><b>Petra S.</b><small>Predračun 259 €</small><span class="chip">Poslan</span></div>
+            <div class="kcard kcard--won"><b>Rok Z.</b><small>Predračun plačan</small><span class="chip chip--ok">✓ Nova stranka</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ E-SIGNATURES ============ -->
+    <section class="section split split--rev" id="podpisi">
+      <div class="wrap split__inner">
+        <div class="split__copy reveal">
+          <p class="kicker">Pogodbe in e-podpisi</p>
+          <h2>Podpis s prstom. Dokaz za vedno.</h2>
+          <p class="section__lead">Pogodbo o sodelovanju in pristopno izjavo stranka podpiše na tablici na recepciji ali doma, prek povezave v e-pošti. Napni shrani točno besedilo, ki ga je podpisala — ne le podpis.</p>
+          <ul class="checks">
+            <li><b>Podpis zdaj</b> na tej napravi ali <b>Pošlji v podpis</b> po e-pošti; povezava velja 14 dni in samo enkrat</li>
+            <li><b>Stranka preveri svoje podatke</b>, popravki se shranijo v njen profil</li>
+            <li><b>Obvezne potrditve in neobvezna soglasja</b> — tudi zavrnitev ostane zabeležena</li>
+            <li><b>PDF</b> z izpolnjenim besedilom, podpisom, časom, IP-jem in prstnim odtisom SHA-256; kopija gre stranki po e-pošti</li>
+            <li><b>Različice besedila</b>: vsak podpis ostane vezan na besedilo, ki ga je stranka res podpisala</li>
+          </ul>
+        </div>
+        <div class="sign reveal" data-club-theme aria-label="Prikaz podpisa pristopne izjave">
+          <div class="sign__top"><span class="app__clublogo" data-club-initial>A</span><div><b>Pristopna izjava</b><small><span data-club-name>Atlas Gym</span> · različica 2</small></div></div>
+          <p class="sign__text">Spodaj podpisana <b>Eva Kovač</b> pristopam k vadbi v klubu <b data-club-name>Atlas Gym</b> in izjavljam:</p>
+          <ul class="sign__boxes">
+            <li class="on">Seznanjena sem s hišnim redom.</li>
+            <li class="on">Moje zdravstveno stanje mi dopušča vadbo.</li>
+            <li class="off">Soglašam z objavo fotografij z vadbe. <em>zavrnjeno</em></li>
+          </ul>
+          <div class="sign__pad">
+            <svg viewBox="0 0 300 90" aria-hidden="true"><path d="M14 62c10-28 22-44 30-40s-6 38-2 42 18-34 26-34-4 30 4 30 14-22 22-22 2 18 10 18 18-30 30-30-8 34 4 34 22-26 34-26 6 20 16 20 22-12 34-10 26 8 44 2"/></svg>
+            <small>Podpis</small>
+          </div>
+          <span class="sign__btn">Podpiši</span>
+          <div class="sign__proof">SHA-256 9f2c41…e41a · 11. 10. 2026 18.04</div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ MEMBERSHIP LOGIC ============ -->
-    <section class="section split split--rev">
+    <section class="section split">
       <div class="wrap split__inner">
         <div class="split__copy reveal">
           <p class="kicker">Karte, ki se računajo same</p>
@@ -464,24 +557,77 @@
     </section>
 
     <!-- ============ MESSAGING ============ -->
-    <section class="section split">
+    <section class="section split split--rev" id="opomniki">
       <div class="wrap split__inner">
         <div class="split__copy reveal">
-          <p class="kicker">Sporočila</p>
+          <p class="kicker">Opomniki</p>
           <h2>Pravo sporočilo, pravi osebi, ob pravem času.</h2>
-          <p class="section__lead">Predloge za e-pošto, SMS in push. Opomnike in avtomatizacije nastavite enkrat, Napni pa jih pošilja sam — samo tistim, ki so za ta kanal in namen dali privolitev.</p>
+          <p class="section__lead">Napni sam pošilja opomnike po e-pošti — pred terminom in pred iztekom karte. Vsakega samo enkrat, le med 8. in 20. uro, odgovori pa pridejo na naslov kluba.</p>
           <ul class="checks">
-            <li><b>Opomnik pred terminom</b> in pred iztekom karte</li>
-            <li><b>Potrdilo plačila</b> z računom v priponki</li>
-            <li><b>Privolitve</b> po kanalu in namenu, z zgodovino kot dokazom</li>
-            <li><b>Odjava</b> z enim klikom v vsakem sporočilu</li>
+            <li><b>Opomnik pred terminom</b> dan prej (ali isto jutro za zgodnji termin), za stranke in kontakte</li>
+            <li><b>Opomnik pred iztekom karte</b> — privzeto 7 dni prej, nastavljivo od 1 do 30 — le če podaljšanje še ni prodano</li>
+            <li><b>Odjava z enim klikom</b>, zabeležena kot privolitev, skupaj z odgovori z recepcije</li>
+            <li><b>Dnevnik pri vsaki stranki</b>: kaj je šlo ven, kaj ne — in zakaj</li>
+            <li><b>Pošlji zdaj</b> za termin, ki je nastal po večernem pošiljanju</li>
           </ul>
         </div>
         <div class="chat reveal" data-club-theme>
-          <div class="sms"><small class="sms__from" data-club-name>Atlas Gym</small><p>Pozdravljeni, Luka! Jutri ob 7.00 vas čaka osebni trening z Majo. Se vidimo 💪</p><time>Danes 18.00</time></div>
-          <div class="sms sms--push"><small class="sms__from"><span data-club-name>Atlas Gym</span> · push</small><p>Vaša karta poteče čez 5 dni. Podaljšate jo lahko v enem kliku.</p><time>Danes 09.00</time></div>
-          <div class="sms sms--mail"><small class="sms__from">E-pošta</small><p><b>Hvala za plačilo — račun 2026-C1-0142 je v priponki.</b></p><time>Včeraj</time></div>
+          <div class="sms"><small class="sms__from"><span data-club-name>Atlas Gym</span> · e-pošta</small><p><b>Jutri ob 7.00 vas čaka osebni trening</b> z Majo na Lokaciji Center. Se vidimo!</p><time>Včeraj 17.05</time></div>
+          <div class="sms"><small class="sms__from"><span data-club-name>Atlas Gym</span> · e-pošta</small><p>Vaša karta poteče čez 7 dni. Podaljšate jo lahko na recepciji ali s kartico prek povezave.</p><time>Danes 9.05</time></div>
+          <div class="msglog">
+            <div class="msglog__h"><b>Dnevnik sporočil · danes</b><span class="chip">SMS in push kmalu</span></div>
+            <ul>
+              <li class="ok"><span>Eva K. · karta se izteka</span><em>poslano 9.05</em></li>
+              <li class="ok"><span>Luka P. · opomnik za termin</span><em>poslano 9.05</em></li>
+              <li class="skip"><span>Marko V. · opomnik za termin</span><em>ni poslano · ni e-pošte</em></li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ============ REPORTS ============ -->
+    <section class="section reports" id="porocila">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="kicker">Nadzorna plošča in poročila</p>
+          <h2>Številke iz dejstev, ne iz tabel.</h2>
+          <p class="section__lead">Vsaka številka se izračuna sproti iz računov, kart, obiskov, terminov in kontaktov. Popravite račun — in poročilo je že pravilno.</p>
+        </div>
+        <div class="rgrid">
+          <div class="rpanel rpanel--wide reveal" data-club-theme>
+            <div class="rpanel__h"><div><small>Promet z DDV · zadnjih 12 mesecev</small><b>18.420 €</b><em class="up">+8 % glede na enake dni prejšnjega meseca</em></div></div>
+            <div class="rbars" aria-hidden="true">
+              <i style="--d:0.19;--h:52%"><span>nov</span></i><i style="--d:0.23;--h:48%"><span>dec</span></i><i style="--d:0.27;--h:71%"><span>jan</span></i><i style="--d:0.31;--h:66%"><span>feb</span></i><i style="--d:0.35;--h:63%"><span>mar</span></i><i style="--d:0.39;--h:58%"><span>apr</span></i><i style="--d:0.43;--h:55%"><span>maj</span></i><i style="--d:0.47;--h:44%"><span>jun</span></i><i style="--d:0.51;--h:39%"><span>jul</span></i><i style="--d:0.55;--h:50%"><span>avg</span></i><i style="--d:0.59;--h:74%"><span>sep</span></i><i class="now" style="--d:0.63;--h:82%"><span>okt</span></i>
+            </div>
+            <div class="rsplit"><span><i class="k1"></i>Članarine 72 %</span><span><i class="k2"></i>Storitve 19 %</span><span><i class="k3"></i>Izdelki 9 %</span></div>
+          </div>
+          <div class="rpanel reveal">
+            <div class="rpanel__h"><div><small>Na kaj paziti</small><b>Ta teden</b></div></div>
+            <ul class="watch">
+              <li><span class="dot dot--warn"></span><div><b>Eva K.</b><small>karta poteče v 3 dneh, podaljšanje ni prodano</small></div></li>
+              <li><span class="dot dot--warn"></span><div><b>Jan B.</b><small>karta poteče v 6 dneh</small></div></li>
+              <li><span class="dot dot--bad"></span><div><b>Nika T.</b><small>karta potekla pred 12 dnevi, ni se vrnila</small></div></li>
+            </ul>
+          </div>
+          <div class="rpanel reveal">
+            <div class="rpanel__h"><div><small>Kdaj prihajajo</small><b>Obiski po dnevu in uri</b></div></div>
+            <div class="heat" aria-hidden="true"></div>
+            <div class="heat__x" aria-hidden="true"><span>6</span><span>10</span><span>14</span><span>18</span><span>22</span></div>
+          </div>
+          <div class="rpanel rpanel--stat reveal">
+            <small>Podaljšanja · september</small><b>78 %</b><p>kart, ki so potekle, je bilo podaljšanih v 14 dneh</p>
+          </div>
+          <div class="rpanel rpanel--stat reveal">
+            <small>Vrednost stranke</small><b>612 €</b><p>povprečje · mediana 438 € · deset najboljših strank na seznamu</p>
+          </div>
+          <div class="rpanel rpanel--stat reveal">
+            <small>Uspešnost prodaje · oktober</small><b>43 %</b><p>novih kontaktov je že postalo strank (6 od 14)</p>
+          </div>
+        </div>
+        <ul class="rlist reveal">
+          <li>Promet po kategorijah</li><li>Stranke z veljavno karto</li><li>Podaljšanja</li><li>Vrednost stranke</li><li>Kontakti in uspešnost prodaje</li><li>Trenerji: ure, udeleženi in zamujeni termini</li><li>Kdaj prihajajo</li><li>Danes: obiski, termini, promet</li>
+        </ul>
       </div>
     </section>
 
@@ -511,26 +657,28 @@
           <div class="reveal">
             <p class="kicker">Na ključ</p>
             <h2>Od nič do »v živo« brez enega klica IT-ju.</h2>
-            <p class="section__lead">Klub postavimo v nekaj minutah. Vodič vas popelje skozi nastavitve v testnem načinu — računi se ne potrjujejo zares, sporočila dobi samo ekipa. Ko je seznam zelen, pritisnete »V živo«.</p>
+            <p class="section__lead">Klub postavimo v nekaj minutah. Do zagona dela v testnem načinu: računi gredo v testno okolje FURS, plačila s kartico so testna, sporočila dobi samo ekipa. Priprava kluba sproti pokaže, kaj še manjka — in kje to uredite.</p>
           </div>
           <ol class="steps">
             <li class="reveal"><span>1</span><div><h3>Postavitev kluba</h3><p>Lastna baza, prijava in naslov <b>vasklub.napni.si</b> — takoj z varno povezavo.</p></div></li>
-            <li class="reveal"><span>2</span><div><h3>Vodič v testnem načinu</h3><p>Podatki podjetja, znamka, pravna besedila, potrdilo FURS, Stripe, e-pošta, SMS, cenik in ekipa.</p></div></li>
-            <li class="reveal"><span>3</span><div><h3>Uvoz obstoječih podatkov</h3><p>Excel ali CSV: povezovanje stolpcev, predogled napak in poskusni uvoz, preden se karkoli zapiše.</p></div></li>
-            <li class="reveal"><span>4</span><div><h3>V živo</h3><p>Vsaka zmožnost se odklene, ko so izpolnjeni pogoji. Prej ni mogoče nič pomotoma poslati ali izdati.</p></div></li>
+            <li class="reveal"><span>2</span><div><h3>Priprava kluba</h3><p>Podatki podjetja, lokacije, potrdilo FURS in poslovni prostor, davčne številke blagajnikov, cenik in Stripe. Vsaka postavka ima povezavo »Uredi« do mesta, kjer jo uredite.</p></div></li>
+            <li class="reveal"><span>3</span><div><h3>Uvoz strank iz Excela</h3><p>Napni sam prepozna stolpce, karte poveže s cenikom in pred uvozom pokaže, katere vrstice so pripravljene, katere so podvojene in kaj je narobe. Uvoz lahko tudi <b>prekličete</b>.</p></div></li>
+            <li class="reveal"><span>4</span><div><h3>Gremo v živo</h3><p>Ko so obvezne postavke zelene, lastnik pritisne »Gremo v živo«. Strežnik seznam preveri še enkrat — brez izjem — in zapiše, kdaj se je klub zagnal.</p></div></li>
           </ol>
         </div>
-        <div class="golive reveal" aria-label="Seznam pred zagonom">
-          <div class="golive__h"><b>Pripravljeni na zagon</b><span class="golive__pct"><span id="golive-count">0</span>/6</span></div>
+        <div class="golive reveal" aria-label="Seznam Priprava kluba">
+          <div class="golive__h"><b>Priprava kluba</b><span class="golive__pct"><span id="golive-count">0</span>/7</span></div>
           <ul>
-            <li data-i="0"><i></i><div><b>Podatki podjetja</b><small>Davčna in matična številka, TRR</small></div></li>
-            <li data-i="1"><i></i><div><b>Znamka</b><small>Logotip, podpis, barva</small></div></li>
-            <li data-i="2"><i></i><div><b>Potrdilo FURS</b><small>Veljavno do 3. 2. 2028 · prostor prijavljen</small></div></li>
-            <li data-i="3"><i></i><div><b>Spletna plačila</b><small>Stripe povezan</small></div></li>
-            <li data-i="4"><i></i><div><b>Pogodba in pristopna izjava</b><small>Različica besedila potrjena</small></div></li>
-            <li data-i="5"><i></i><div><b>Uvoz strank</b><small>412 strank · 0 napak</small></div></li>
+            <li><i></i><div><b>Podatki podjetja</b><small>Naziv, davčna številka, sedež, e-pošta</small></div></li>
+            <li><i></i><div><b>Lokacija</b><small>Naslov in oznaka poslovnega prostora</small></div></li>
+            <li><i></i><div><b>Digitalno potrdilo FURS</b><small>Produkcijsko, veljavno do 3. 2. 2028</small></div></li>
+            <li><i></i><div><b>Poslovni prostor pri FURS</b><small>Prijavljen</small></div></li>
+            <li><i></i><div><b>Davčne številke blagajnikov</b><small>3 od 3 zaposlenih</small></div></li>
+            <li><i></i><div><b>Cenik</b><small>6 aktivnih kart</small></div></li>
+            <li><i></i><div><b>Plačila s kartico</b><small>Stripe povezan</small></div></li>
           </ul>
-          <button class="btn btn--volt btn--block golive__btn" id="golive-btn" disabled>V živo</button>
+          <p class="golive__rec">Priporočeno: uvoz strank · pregledana pogodba in izjava · logotip</p>
+          <button class="btn btn--volt btn--block golive__btn" id="golive-btn" disabled>Gremo v živo</button>
         </div>
       </div>
     </section>
@@ -548,7 +696,7 @@
           <div class="sec reveal"><b>Brez vpogleda brez dovoljenja</b><p>Ekipa Napni vaših podatkov ne vidi. Za podporo nam lastnik odobri časovno omejen dostop, vsak korak pa ostane v dnevniku.</p></div>
           <div class="sec reveal"><b>Šifrirane skrivnosti</b><p>Potrdila FURS in ključi integracij so zapečateni s Cloud KMS. Do vašega ključa Stripe sploh ne pridemo.</p></div>
           <div class="sec reveal"><b>Privolitve kot dokaz</b><p>Vsak »da« in »ne« po kanalu in namenu ostane zabeležen z datumom — vaš dokaz po GDPR.</p></div>
-          <div class="sec reveal"><b>Vaši podatki, vaš izhod</b><p>Celoten izvoz (baza, CSV, dokumenti) in izbris z enim ukazom. Nikoli niste ujeti.</p></div>
+          <div class="sec reveal"><b>Vaši podatki, vaš izhod</b><p>Lastnik kadarkoli v nastavitvah prenese ZIP z vsemi tabelami (CSV, ki ga odpre Excel) in vsemi dokumenti. Vsak prenos je zabeležen.</p></div>
         </div>
       </div>
     </section>
@@ -583,10 +731,11 @@
             <ul class="checks checks--tight">
               <li>Stranke, plačniki, cenik in karte</li>
               <li>Koledar, obiski, osebni treningi</li>
-              <li>Računi, predračuni, UPN QR</li>
+              <li>Računi, predračuni, UPN QR, blagajna</li>
               <li>Davčno potrjevanje FURS</li>
               <li>Pogodbe in e-podpisi</li>
-              <li>Prodaja, sporočila, poročila</li>
+              <li>Prodaja, opomniki, poročila</li>
+              <li>Uvoz iz Excela in izvoz vseh podatkov</li>
               <li>Vaša znamka in domena</li>
             </ul>
           </article>
@@ -619,6 +768,8 @@
         </div>
         <div class="roadmap reveal">
           <b>Na poti</b>
+          <span>SMS in push</span>
+          <span>Table po meri in skrb za stranke</span>
           <span>Ponavljajoče bremenitve (SEPA)</span>
           <span>Portal za stranke</span>
           <span>Prijava na recepciji in vrata</span>
@@ -645,11 +796,11 @@
           </details>
           <details class="reveal">
             <summary>Lahko prenesemo podatke iz obstoječega programa?</summary>
-            <p>Da. Stranke, plačnike, veljavne karte, cenik in ekipo uvozite iz Excela ali CSV-ja. Pred uvozom vidite predogled z napakami in naredite poskusni uvoz. Za znane izvoze drugih programov pripravimo preslikavo.</p>
+            <p>Da. Stranke in njihove veljavne karte uvozite iz Excela (.xlsx) ali CSV-ja, tudi v kodiranju slovenskega Excela. Napni sam prepozna stolpce v slovenščini ali angleščini, karte poveže s cenikom in pred uvozom pokaže, katere vrstice so pripravljene, katere so podvojene in kaj je narobe. Če se zmotite, uvoz prekličete.</p>
           </details>
           <details class="reveal">
             <summary>Ali Napni res izdaja davčno potrjene račune?</summary>
-            <p>Da. Naložite svoje potrdilo FURS, prijavite poslovni prostor za vsako lokacijo in Napni potrjuje račune z ZOI in EOR. Dokler ste v testnem načinu, gredo računi v testno okolje FURS.</p>
+            <p>Da. Naložite svoje potrdilo FURS, prijavite poslovni prostor za vsako lokacijo in Napni potrjuje račune z ZOI in EOR. Dokler ste v testnem načinu, gredo računi v testno okolje FURS. Če FURS za trenutek ni dosegljiv, račun vseeno izdate in Napni ga pošlje naknadno.</p>
           </details>
           <details class="reveal">
             <summary>Imamo več lokacij. Ali to deluje?</summary>
@@ -661,7 +812,11 @@
           </details>
           <details class="reveal">
             <summary>Kaj se zgodi, če odidemo?</summary>
-            <p>Dobite celoten izvoz: bazo, CSV datoteke in vse dokumente. Nato vašo bazo, prijavo in skrivnosti izbrišemo. Vaši podatki so vaši.</p>
+            <p>Dobite celoten izvoz v ZIP: vse tabele kot CSV in vse dokumente, od podpisanih pogodb do logotipa. Lastnik ga lahko prenese kadarkoli sam. Ob odhodu nato vašo bazo, prijavo in datoteke izbrišemo — šele ko je izvoz shranjen.</p>
+          </details>
+          <details class="reveal">
+            <summary>Kdo pripravi besedilo pogodbe in pristopne izjave?</summary>
+            <p>Od prvega dne imate vzorčno besedilo Napni. Pred zagonom naj ga pregleda vaš pravnik; spremembe nam pošljete in ekipa Napni objavi novo, pregledano različico. Vsak podpisan dokument ostane vezan na besedilo, ki ga je stranka res podpisala.</p>
           </details>
           <details class="reveal">
             <summary>Ali lahko uporabljamo svojo domeno?</summary>
