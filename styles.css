@@ -1,5 +1,5 @@
-/* Napni landing — tokens
-   --volt is Napni's own brand; --club is the demo Club's accent,
+/* GymRhythm landing — tokens
+   --volt is GymRhythm's own brand; --club is the demo Club's accent,
    changed live by the white-label tuner. */
 :root {
   color-scheme: dark;
@@ -136,6 +136,7 @@ button { font: inherit; color: inherit; }
   font-size: clamp(44px, 8.4vw, 112px); font-weight: 900; font-stretch: 112%; letter-spacing: -0.045em; line-height: .94;
 }
 .hl { color: var(--volt); position: relative; white-space: nowrap; }
+.hero__keep { white-space: nowrap; }
 .hero__lead { margin: 28px auto 0; max-width: 680px; color: var(--muted); font-size: clamp(17px, 2vw, 20px); line-height: 1.55; }
 .hero__ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 36px; }
 .hero__ticks { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 26px; margin-top: 26px; color: var(--muted); font-size: 14px; }
@@ -568,8 +569,8 @@ button { font: inherit; color: inherit; }
   background: var(--volt); color: var(--volt-ink);
 }
 .cta__inner::before {
-  content: "napni"; position: absolute; left: 50%; bottom: -0.32em; transform: translateX(-50%);
-  font: 900 clamp(140px, 26vw, 360px)/1 var(--display); font-stretch: 125%; letter-spacing: -0.06em; color: rgba(10,11,13,.06); pointer-events: none; white-space: nowrap;
+  content: "gymrhythm"; position: absolute; left: 50%; bottom: -0.32em; transform: translateX(-50%);
+  font: 900 clamp(56px, 13vw, 190px)/1 var(--display); font-stretch: 125%; letter-spacing: -0.06em; color: rgba(10,11,13,.06); pointer-events: none; white-space: nowrap;
 }
 .cta h2 { position: relative; font-size: clamp(42px, 7vw, 92px); font-weight: 900; font-stretch: 115%; letter-spacing: -0.045em; line-height: .95; }
 .cta p { position: relative; max-width: 560px; margin: 22px auto 0; font-size: 19px; color: rgba(10,11,13,.75); }

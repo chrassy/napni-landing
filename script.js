@@ -1,9 +1,9 @@
-// Napni landing — small, dependency-free enhancements.
+// GymRhythm landing — small, dependency-free enhancements.
 (() => {
   "use strict";
 
   // The one place to change the contact address.
-  const CONTACT_EMAIL = "info@napni.si";
+  const CONTACT_EMAIL = "info@gymrhythmapp.com";
 
   const root = document.documentElement;
   root.classList.remove("no-js");
