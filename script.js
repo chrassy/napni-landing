@@ -196,6 +196,17 @@
     const openedAt = performance.now();
     signup.hidden = false;
 
+    // Sign-up with Google, once the app has it configured; it runs on the app's own page.
+    const google = document.getElementById("signup-google");
+    fetch(SIGNUP_API)
+      .then((res) => (res.ok ? res.json() : {}))
+      .then((cfg) => {
+        if (!cfg.google) return;
+        google.querySelector("a").href = cfg.google;
+        google.hidden = false;
+      })
+      .catch(() => {});
+
     // Same rule as the app: 3–40 lowercase letters, digits or single hyphens, starting with a letter.
     const toSlug = (s) => s.toLowerCase()
       .replace(/[čć]/g, "c").replace(/š/g, "s").replace(/ž/g, "z").replace(/đ/g, "d")
