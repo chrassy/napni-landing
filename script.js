@@ -6,13 +6,17 @@
   const CONTACT_EMAIL = "info@gymrhythmapp.com";
   // Where the sign-up form posts: the app's sign-up host (napni repo, SIGNUP_ORIGINS
   // must list this page's origin). Locally the app runs on app.localhost:3000.
-  const SIGNUP_API = ["localhost", "127.0.0.1"].includes(location.hostname)
-    ? "http://app.localhost:3000/api/signup"
-    : "https://app.gymrhythmapp.com/api/signup";
+  const APP_ORIGIN = ["localhost", "127.0.0.1"].includes(location.hostname)
+    ? "http://app.localhost:3000"
+    : "https://app.gymrhythmapp.com";
+  const SIGNUP_API = `${APP_ORIGIN}/api/signup`;
 
   const root = document.documentElement;
   root.classList.remove("no-js");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- sign-in: every club signs in on its own address; the app finds which ---------- */
+  document.querySelectorAll("[data-app-login]").forEach((a) => { a.href = `${APP_ORIGIN}/login`; });
 
   /* ---------- contact links ---------- */
   document.querySelectorAll("[data-mail]").forEach((a) => {
