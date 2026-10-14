@@ -40,7 +40,7 @@
         <a href="#varnost">Varnost</a>
         <a href="#vprasanja">Vprašanja</a>
       </nav>
-      <a class="btn btn--volt btn--sm nav__cta" href="#kontakt">Rezervirajte predstavitev</a>
+      <a class="btn btn--volt btn--sm nav__cta" href="#registracija">Ustvarite klub</a>
       <button class="nav__burger" aria-label="Odpri meni" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
     </div>
     <div class="mobile-menu" id="mobile-menu" hidden>
@@ -52,7 +52,7 @@
       <a href="#postavitev">Postavitev</a>
       <a href="#varnost">Varnost</a>
       <a href="#vprasanja">Vprašanja</a>
-      <a class="btn btn--volt" href="#kontakt">Rezervirajte predstavitev</a>
+      <a class="btn btn--volt" href="#registracija">Ustvarite klub</a>
     </div>
   </header>
 
@@ -72,8 +72,8 @@
           Stranke, karte, koledar, računi z davčnim potrjevanjem, prodaja, sporočila in poročila — v eni aplikaciji, pod vašim logotipom in na vaši domeni. Postavljena v minutah, ne v mesecih.
         </p>
         <div class="hero__ctas reveal">
-          <a class="btn btn--volt btn--lg" href="#kontakt">Rezervirajte predstavitev <span aria-hidden="true">→</span></a>
-          <a class="btn btn--ghost btn--lg" href="#funkcije">Oglejte si funkcije</a>
+          <a class="btn btn--volt btn--lg" href="#registracija">Ustvarite klub <span aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost btn--lg" href="#kontakt">Rezervirajte predstavitev</a>
         </div>
         <ul class="hero__ticks reveal" aria-label="Ključne prednosti">
           <li>Davčno potrjevanje FURS vključeno</li>
@@ -753,7 +753,7 @@
               <li>Vpliv na to, kaj gradimo naslednje</li>
               <li>Pogoji pilotnega kluba, zaklenjeni vnaprej</li>
             </ul>
-            <a class="btn btn--volt btn--block" href="#kontakt">Prijavite klub</a>
+            <a class="btn btn--volt btn--block" href="#registracija">Prijavite klub</a>
           </article>
           <article class="plan reveal">
             <h3>Dodatki</h3>
@@ -829,6 +829,65 @@
       </div>
     </section>
 
+    <!-- ============ SIGN-UP ============ -->
+    <section class="section signup" id="registracija">
+      <div class="wrap signup__inner">
+        <div class="signup__copy reveal">
+          <p class="kicker">Registracija</p>
+          <h2>Postavite klub sami. Zdaj.</h2>
+          <p class="section__lead">Vpišite ime kluba in svoj e-naslov. Po potrditvi dobite svoj klub na lastnem naslovu in vas vodimo skozi pripravo. Plačilne kartice ne potrebujete.</p>
+          <ol class="signup__steps">
+            <li><span>1</span>Izpolnite obrazec</li>
+            <li><span>2</span>Potrdite e-naslov s klikom v sporočilu</li>
+            <li><span>3</span>Nastavite geslo in začnite s pripravo kluba</li>
+          </ol>
+        </div>
+        <div class="signup__card reveal">
+          <form class="signup__form" id="signup-form" novalidate hidden>
+            <label class="field">
+              <span>Ime kluba</span>
+              <input type="text" name="name" autocomplete="organization" maxlength="80" required placeholder="npr. Atlas Gym">
+              <small class="field__err" data-err="name"></small>
+            </label>
+            <label class="field">
+              <span>Naslov kluba</span>
+              <span class="field__addr"><input type="text" name="slug" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="40" required placeholder="atlasgym" aria-describedby="signup-addr"><i id="signup-addr">.gymrhythmapp.com</i></span>
+              <small class="field__err" data-err="slug"></small>
+            </label>
+            <div class="field__row">
+              <label class="field">
+                <span>Ime</span>
+                <input type="text" name="firstName" autocomplete="given-name" maxlength="80" required>
+                <small class="field__err" data-err="firstName"></small>
+              </label>
+              <label class="field">
+                <span>Priimek</span>
+                <input type="text" name="lastName" autocomplete="family-name" maxlength="80">
+                <small class="field__err" data-err="lastName"></small>
+              </label>
+            </div>
+            <label class="field">
+              <span>E-pošta</span>
+              <input type="email" name="email" autocomplete="email" maxlength="200" required placeholder="vi@vasklub.si">
+              <small class="field__err" data-err="email"></small>
+            </label>
+            <!-- People never see this field; robots fill it in. -->
+            <label class="signup__hp" aria-hidden="true">Spletna stran <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+            <button class="btn btn--volt btn--lg btn--block" type="submit">Ustvari klub <span aria-hidden="true">→</span></button>
+            <p class="signup__msg" role="alert" hidden></p>
+            <p class="signup__fine">Do zagona je klub v testnem načinu: računi gredo v testno okolje FURS, sporočila pa samo vaši ekipi.</p>
+          </form>
+          <div class="signup__done" id="signup-done" role="status" tabindex="-1" hidden>
+            <span class="signup__check" aria-hidden="true"></span>
+            <h3>Preverite e-pošto</h3>
+            <p>Na <b data-signup-email></b> smo poslali povezavo za potrditev. Ko jo kliknete, ustvarimo klub <b data-signup-club></b>. Povezava velja 48 ur.</p>
+            <p class="signup__fine">Ni sporočila? Poglejte med vsiljeno pošto.</p>
+          </div>
+          <noscript><p class="signup__fine">Za registracijo omogočite JavaScript.</p></noscript>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ CTA ============ -->
     <section class="cta" id="kontakt">
       <div class="wrap"><div class="cta__inner reveal">
@@ -855,6 +914,7 @@
         <a href="#denar">Računi in FURS</a>
         <a href="#varnost">Varnost</a>
         <a href="#cenik">Cenik</a>
+        <a href="#registracija">Registracija</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
       <small>© <span id="year">2026</span> GymRhythm. Imena strank, trenerjev in zneski na tej strani so ponazoritve.</small>
