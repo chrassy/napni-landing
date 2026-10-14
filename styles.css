@@ -89,6 +89,8 @@ button { font: inherit; color: inherit; }
 .nav__links { display: flex; gap: 26px; margin-left: auto; font-size: 14.5px; color: var(--muted); }
 .nav__links a { transition: color .2s; }
 .nav__links a:hover { color: var(--text); }
+.nav__login { font-size: 14.5px; font-weight: 500; color: var(--text); white-space: nowrap; transition: color .2s; }
+.nav__login:hover { color: var(--volt); }
 .nav__burger { display: none; margin-left: auto; width: 44px; height: 44px; border: 1px solid var(--line-2); border-radius: 12px; background: transparent; cursor: pointer; position: relative; }
 .nav__burger span { position: absolute; left: 12px; right: 12px; height: 2px; background: var(--text); border-radius: 2px; transition: transform .25s var(--ease), top .25s var(--ease); }
 .nav__burger span:first-child { top: 16px; }
@@ -100,7 +102,7 @@ button { font: inherit; color: inherit; }
 .mobile-menu a:not(.btn) { padding: 14px 4px; border-bottom: 1px solid var(--line); font-weight: 500; }
 .mobile-menu .btn { margin-top: 14px; }
 @media (max-width: 1100px) {
-  .nav__links, .nav__cta { display: none; }
+  .nav__links, .nav__login, .nav__cta { display: none; }
   .nav__burger { display: block; }
   .nav { background: rgba(10,11,13,.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
 }
@@ -565,6 +567,9 @@ button { font: inherit; color: inherit; }
 /* ---------- sign-up ---------- */
 .signup { background: linear-gradient(180deg, transparent, var(--bg-2) 20%, var(--bg-2) 80%, transparent); }
 .signup__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.signup__login { margin-top: 22px; color: var(--muted); font-size: 15px; }
+.signup__login a { color: var(--text); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.signup__login a:hover { color: var(--volt); }
 .signup__steps { display: grid; gap: 12px; margin-top: 32px; counter-reset: none; }
 .signup__steps li { display: flex; align-items: center; gap: 14px; font-weight: 500; }
 .signup__steps span { display: grid; place-items: center; flex: none; width: 34px; height: 34px; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--line-2); font: 800 15px var(--display); color: var(--volt); }
