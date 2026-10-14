@@ -4,6 +4,11 @@
 
   // The one place to change the contact address.
   const CONTACT_EMAIL = "info@gymrhythmapp.com";
+  // Where the sign-up form posts: the app's sign-up host (napni repo, SIGNUP_ORIGINS
+  // must list this page's origin). Locally the app runs on app.localhost:3000.
+  const SIGNUP_API = ["localhost", "127.0.0.1"].includes(location.hostname)
+    ? "http://app.localhost:3000/api/signup"
+    : "https://app.gymrhythmapp.com/api/signup";
 
   const root = document.documentElement;
   root.classList.remove("no-js");
@@ -178,6 +183,88 @@
       btn.classList.add("is-live");
       btn.textContent = "✓ Klub je v živo";
       btn.disabled = true;
+    });
+  }
+
+  /* ---------- sign-up ---------- */
+  const signup = document.getElementById("signup-form");
+  if (signup) {
+    const done = document.getElementById("signup-done");
+    const msg = signup.querySelector(".signup__msg");
+    const submit = signup.querySelector('button[type="submit"]');
+    const field = (name) => signup.elements.namedItem(name);
+    const openedAt = performance.now();
+    signup.hidden = false;
+
+    // Same rule as the app: 3–40 lowercase letters, digits or single hyphens, starting with a letter.
+    const toSlug = (s) => s.toLowerCase()
+      .replace(/[čć]/g, "c").replace(/š/g, "s").replace(/ž/g, "z").replace(/đ/g, "d")
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9]+/g, "-").replace(/^[^a-z]+/, "").slice(0, 40).replace(/-+$/, "");
+    let slugEdited = false;
+    field("name").addEventListener("input", () => { if (!slugEdited) field("slug").value = toSlug(field("name").value); });
+    field("slug").addEventListener("input", () => { slugEdited = field("slug").value !== ""; });
+    field("slug").addEventListener("change", () => { field("slug").value = toSlug(field("slug").value); });
+
+    const MESSAGES = {
+      required: "Obvezno polje.",
+      taken: "Ta naslov je že zaseden. Izberite drugega.",
+      format: { slug: "3–40 malih črk, številk ali vezajev; začne se s črko.", email: "Vpišite veljaven e-naslov.", _: "Preverite vnos." },
+    };
+    const errorText = (name, code) => {
+      const m = MESSAGES[code] ?? MESSAGES.format;
+      return typeof m === "string" ? m : (m[name] ?? m._);
+    };
+    const showErrors = (fields) => {
+      signup.querySelectorAll("[data-err]").forEach((el) => {
+        const name = el.dataset.err;
+        const code = fields[name];
+        el.textContent = code ? errorText(name, code) : "";
+        const input = field(name);
+        if (code) input.setAttribute("aria-invalid", "true"); else input.removeAttribute("aria-invalid");
+      });
+      const first = Object.keys(fields).map(field).find(Boolean);
+      if (first) first.focus();
+    };
+    const showMessage = (text) => { msg.textContent = text; msg.hidden = !text; };
+
+    signup.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      showMessage("");
+      field("slug").value = toSlug(field("slug").value);
+      const values = Object.fromEntries(["name", "slug", "firstName", "lastName", "email", "website"].map((n) => [n, field(n).value.trim()]));
+      const missing = {};
+      for (const n of ["name", "slug", "firstName", "email"]) if (!values[n]) missing[n] = "required";
+      if (values.email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(values.email)) missing.email ??= "format";
+      showErrors(missing);
+      if (Object.keys(missing).length) return;
+
+      submit.disabled = true;
+      submit.classList.add("is-busy");
+      try {
+        const res = await fetch(SIGNUP_API, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ...values, elapsedMs: Math.round(performance.now() - openedAt) }),
+        });
+        const body = await res.json().catch(() => ({}));
+        if (body.status === "sent") {
+          done.querySelector("[data-signup-email]").textContent = values.email;
+          done.querySelector("[data-signup-club]").textContent = `${values.slug}.gymrhythmapp.com`;
+          signup.hidden = true;
+          done.hidden = false;
+          done.focus();
+          return;
+        }
+        if (body.status === "invalid" && body.fields && Object.keys(body.fields).length) showErrors(body.fields);
+        else if (body.status === "limited") showMessage("Preveč poskusov s tega naslova. Poskusite znova čez eno uro.");
+        else showMessage("Registracija trenutno ne deluje. Poskusite znova čez nekaj minut.");
+      } catch {
+        showMessage("Ni povezave s strežnikom. Preverite internet in poskusite znova.");
+      } finally {
+        submit.disabled = false;
+        submit.classList.remove("is-busy");
+      }
     });
   }
 
