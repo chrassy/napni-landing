@@ -21,6 +21,7 @@ email lands in Mailpit at <http://localhost:8025>.
 - `index.html` — all copy and sections
 - `styles.css` — tokens at the top (`--volt` is GymRhythm's colour, `--club` the demo club's accent)
 - `script.js` — reveal animations, the white-label tuner, go-live checklist; `CONTACT_EMAIL` at the top sets every contact link; `SIGNUP_API` is where the sign-up form (`#registracija`) posts — the app's `app.gymrhythmapp.com`, which must list this page's origin in `SIGNUP_ORIGINS`
+- `zasebnost.html` — privacy policy (Slovenian); the highlighted `[…]` placeholders must be filled in before it goes live
 - `og.png` — social preview image (1200×630)
 
 Pushing to `main` deploys to GitHub Pages (`.github/workflows/deploy.yml`).
