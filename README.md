@@ -24,4 +24,6 @@ email lands in Mailpit at <http://localhost:8025>.
 - `zasebnost.html` — privacy policy (Slovenian); the highlighted `[…]` placeholders must be filled in before it goes live
 - `og.png` — social preview image (1200×630)
 
+- `.well-known/assetlinks.json` — lets links to Club portals (`https://<slug>.gymrhythmapp.com/my`) open in the Phone app on Android (napni ADR 0022). Android checks a `*.` host against the root domain, so this file lives here, not in the app. The two fingerprints are Google Play's signing key and the upload key; on Android 11 and older a failed check also stops the app's other links, so keep it valid.
+
 Pushing to `main` deploys to GitHub Pages (`.github/workflows/deploy.yml`).
