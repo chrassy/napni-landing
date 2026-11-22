@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "si.evolucija.moja",
+      "sha256_cert_fingerprints": [
+        "DF:56:A4:D9:C4:ED:92:0D:9B:45:D1:A0:F4:47:7C:51:A0:B7:AB:CB:0C:4C:BA:05:9F:46:7D:CB:F6:F2:DC:67",
+        "78:5C:1E:83:F4:F7:1D:99:D8:A0:2A:68:4F:7F:8A:D0:19:19:7F:BE:77:7D:13:60:83:24:62:44:95:4C:55:14"
+      ]
+    }
+  }
+]
