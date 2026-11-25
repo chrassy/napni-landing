@@ -1,0 +1,60 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4173"
+      ],
+      "port": 4173
+    },
+    {
+      "name": "app",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--prefix",
+        "/Users/aljazklanecek/dev/napni"
+      ],
+      "port": 3000
+    },
+    {
+      "name": "app-sms",
+      "runtimeExecutable": "/usr/bin/env",
+      "runtimeArgs": [
+        "PUBLIC_PORT=3001",
+        "npm",
+        "run",
+        "dev",
+        "--prefix",
+        "/Users/aljazklanecek/dev/napni-sms",
+        "--",
+        "-p",
+        "3001"
+      ],
+      "port": 3001,
+      "url": "http://demo.localhost:3001"
+    },
+    {
+      "name": "app-staff",
+      "runtimeExecutable": "/usr/bin/env",
+      "runtimeArgs": [
+        "PUBLIC_PORT=3002",
+        "npm",
+        "run",
+        "dev",
+        "--prefix",
+        "/Users/aljazklanecek/dev/napni-staff",
+        "--",
+        "-p",
+        "3002"
+      ],
+      "port": 3002,
+      "url": "http://app.localhost:3002"
+    }
+  ]
+}

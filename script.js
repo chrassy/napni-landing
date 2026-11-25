@@ -200,13 +200,29 @@
     const openedAt = performance.now();
     signup.hidden = false;
 
-    // Sign-up with Google, once the app has it configured; it runs on the app's own page.
+    // The kind of club (napni: Club preset): sent with the form, and picks the
+    // app's Google page; ?klub=borilni (the martial arts link) preselects it.
+    const kind = document.getElementById("signup-kind");
+    kind.hidden = false;
+    const preset = () => kind.querySelector("input:checked").value;
+    if (new URLSearchParams(location.search).get("klub") === "borilni") kind.querySelector('[value="martial_arts"]').checked = true;
+    document.querySelectorAll("[data-kind-link]").forEach((a) => a.addEventListener("click", () => {
+      kind.querySelector('[value="martial_arts"]').checked = true;
+      kind.dispatchEvent(new Event("change"));
+    }));
+
+    // Sign-up with Google, once the app has it configured; it runs on the app's own page, one per kind.
     const google = document.getElementById("signup-google");
+    const GOOGLE_PAGES = { gym: "", martial_arts: "borilne-vescine" };
+    let googleRoot = null;
+    const pointGoogle = () => { if (googleRoot) google.querySelector("a").href = googleRoot + GOOGLE_PAGES[preset()]; };
+    kind.addEventListener("change", pointGoogle);
     fetch(SIGNUP_API)
       .then((res) => (res.ok ? res.json() : {}))
       .then((cfg) => {
         if (!cfg.google) return;
-        google.querySelector("a").href = cfg.google;
+        googleRoot = cfg.google;
+        pointGoogle();
         google.hidden = false;
       })
       .catch(() => {});
@@ -260,7 +276,7 @@
         const res = await fetch(SIGNUP_API, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ ...values, elapsedMs: Math.round(performance.now() - openedAt) }),
+          body: JSON.stringify({ ...values, preset: preset(), elapsedMs: Math.round(performance.now() - openedAt) }),
         });
         const body = await res.json().catch(() => ({}));
         if (body.status === "sent") {

@@ -576,6 +576,15 @@ button { font: inherit; color: inherit; }
 .signup__card { padding: 28px; border-radius: 24px; background: var(--surface); border: 1px solid var(--line-2); box-shadow: 0 50px 100px -40px rgba(0,0,0,.9); }
 .signup__form { display: grid; gap: 16px; }
 .signup__form[hidden], .signup__done[hidden], .signup__msg[hidden] { display: none; }
+.signup__kind { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 0 0 20px; padding: 0; border: 0; min-width: 0; }
+.signup__kind legend { margin-bottom: 8px; padding: 0; color: var(--muted); font-size: 14px; }
+.signup__kind label { position: relative; cursor: pointer; }
+.signup__kind input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.signup__kind span { display: grid; gap: 4px; height: 100%; padding: 12px 14px; border: 1px solid var(--line-2); border-radius: var(--radius-sm); background: var(--surface-2); transition: border-color .2s var(--ease), background .2s var(--ease); }
+.signup__kind b { font-weight: 600; font-size: 15px; }
+.signup__kind small { color: var(--muted); font-size: 13px; line-height: 1.35; }
+.signup__kind input:checked + span { border-color: var(--volt); background: rgba(215, 255, 58, 0.06); }
+.signup__kind input:focus-visible + span { outline: 2px solid var(--volt); outline-offset: 2px; }
 .field { display: grid; gap: 8px; min-width: 0; }
 .field > span:first-child { font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: .02em; }
 .field input {
@@ -614,6 +623,7 @@ button { font: inherit; color: inherit; }
 @media (max-width: 480px) {
   .signup__card { padding: 20px; }
   .field__row { grid-template-columns: 1fr; }
+  .signup__kind { grid-template-columns: 1fr; }
   .field__addr i { padding: 0 8px; font-size: 12.5px; }
 }
 
