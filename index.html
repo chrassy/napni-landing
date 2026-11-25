@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GymRhythm — vse za vodenje fitnesa, pod vašo znamko</title>
-  <meta name="description" content="GymRhythm je platforma na ključ za fitnese in vadbene studie: stranke, karte, koledar, računi z davčnim potrjevanjem, CRM, sporočila in poročila. Pod vašim logotipom, na vaši domeni.">
+  <meta name="description" content="GymRhythm je platforma na ključ za fitnese in vadbene studie: stranke, karte, koledar, računi z davčnim potrjevanjem, CRM, avtomatizacije, trening programi in aplikacija za stranke. Pod vašim logotipom, na vaši domeni.">
   <meta name="theme-color" content="#0a0b0d">
   <link rel="canonical" href="https://gymrhythmapp.com/">
   <meta property="og:type" content="website">
@@ -12,7 +12,7 @@
   <meta property="og:site_name" content="GymRhythm">
   <meta property="og:locale" content="sl_SI">
   <meta property="og:title" content="GymRhythm — vse za vodenje fitnesa, pod vašo znamko">
-  <meta property="og:description" content="Stranke, karte, koledar, računi s FURS, CRM in sporočila v eni aplikaciji. Postavljena v minutah, pod vašim logotipom.">
+  <meta property="og:description" content="Stranke, karte, koledar, računi s FURS, CRM, trening in aplikacija za stranke v eni platformi. Postavljena v minutah, pod vašim logotipom.">
   <meta property="og:image" content="https://gymrhythmapp.com/og.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -33,11 +33,11 @@
       </a>
       <nav class="nav__links" aria-label="Glavna navigacija">
         <a href="#funkcije">Funkcije</a>
-        <a href="#znamka">Vaša znamka</a>
+        <a href="#aplikacija">Za stranke</a>
+        <a href="#trening">Trening</a>
         <a href="#denar">Računi in FURS</a>
-        <a href="#blagajna">Blagajna</a>
+        <a href="#avtomatizacije">Avtomatizacije</a>
         <a href="#postavitev">Postavitev</a>
-        <a href="#varnost">Varnost</a>
         <a href="#vprasanja">Vprašanja</a>
       </nav>
       <a class="nav__login" href="https://app.gymrhythmapp.com/login" data-app-login>Prijava</a>
@@ -46,9 +46,13 @@
     </div>
     <div class="mobile-menu" id="mobile-menu" hidden>
       <a href="#funkcije">Funkcije</a>
+      <a href="#aplikacija">Aplikacija za stranke</a>
+      <a href="#trening">Trening</a>
       <a href="#znamka">Vaša znamka</a>
       <a href="#denar">Računi in FURS</a>
       <a href="#blagajna">Blagajna</a>
+      <a href="#prodaja">CRM</a>
+      <a href="#avtomatizacije">Avtomatizacije</a>
       <a href="#porocila">Poročila</a>
       <a href="#postavitev">Postavitev</a>
       <a href="#varnost">Varnost</a>
@@ -71,7 +75,7 @@
           <span class="hl">GymRhythm</span> <span class="hero__keep">vodi klub.</span>
         </h1>
         <p class="hero__lead reveal">
-          Stranke, karte, koledar, računi z davčnim potrjevanjem, prodaja, sporočila in poročila — v eni aplikaciji, pod vašim logotipom in na vaši domeni. Postavljena v minutah, ne v mesecih.
+          Stranke, karte, koledar, računi z davčnim potrjevanjem, CRM, avtomatizacije in trening programi — plus aplikacija, v kateri vaše stranke trenirajo, beležijo prehrano in pišejo trenerju. Pod vašim logotipom in na vaši domeni. Postavljena v minutah, ne v mesecih.
         </p>
         <div class="hero__ctas reveal">
           <a class="btn btn--volt btn--lg" href="#registracija">Ustvarite klub <span aria-hidden="true">→</span></a>
@@ -80,7 +84,7 @@
         <ul class="hero__ticks reveal" aria-label="Ključne prednosti">
           <li>Davčno potrjevanje FURS vključeno</li>
           <li>Podatki v EU, ločena baza za vsak klub</li>
-          <li>Slovenski vmesnik</li>
+          <li>Aplikacija za stranke z vašim imenom</li>
         </ul>
 
         <!-- product mock -->
@@ -94,15 +98,15 @@
               <aside class="app__side">
                 <div class="app__club"><span class="app__clublogo" data-club-initial>A</span><b data-club-name>Atlas Gym</b></div>
                 <ul>
-                  <li class="on"><i class="ic ic-grid"></i>Nadzorna plošča</li>
-                  <li><i class="ic ic-users"></i>Stranke</li>
+                  <li class="on"><i class="ic ic-grid"></i>Moj dan</li>
+                  <li><i class="ic ic-msg"></i>Klepet</li>
                   <li><i class="ic ic-cal"></i>Koledar</li>
-                  <li><i class="ic ic-check"></i>Obiski</li>
-                  <li><i class="ic ic-board"></i>Kontakti</li>
-                  <li><i class="ic ic-doc"></i>Računi</li>
+                  <li><i class="ic ic-users"></i>Stranke</li>
+                  <li><i class="ic ic-check"></i>Programi</li>
+                  <li><i class="ic ic-board"></i>CRM</li>
+                  <li><i class="ic ic-pen"></i>Sporočila</li>
                   <li><i class="ic ic-till"></i>Blagajna</li>
-                  <li><i class="ic ic-tag"></i>Cenik</li>
-                  <li><i class="ic ic-msg"></i>Sporočila</li>
+                  <li><i class="ic ic-doc"></i>Knjigovodstvo</li>
                   <li><i class="ic ic-chart"></i>Poročila</li>
                 </ul>
               </aside>
@@ -144,7 +148,7 @@
 
           <div class="toast toast--a"><span class="toast__ic ok">✓</span><div><b>Račun 2026-0142 potrjen</b><small>FURS · EOR 7c1e…a90b</small></div></div>
           <div class="toast toast--b"><span class="toast__ic club">＋</span><div><b>Nov kontakt s spletne strani</b><small>Posvet rezerviran za ponedeljek</small></div></div>
-          <div class="toast toast--c"><span class="toast__ic snow">❄</span><div><b>Karta zamrznjena 14 dni</b><small>Nov datum izteka: 28. 1. 2027</small></div></div>
+          <div class="toast toast--c"><span class="toast__ic snow">★</span><div><b>Eva K. je zaključila trening</b><small>2 nova osebna rekorda · počep 85 kg</small></div></div>
         </div>
       </div>
     </section>
@@ -154,7 +158,7 @@
       <div class="wrap strip__inner">
         <span class="strip__label">Povezano s tem, kar fitnes v Sloveniji res potrebuje</span>
         <ul class="strip__list">
-          <li>FURS</li><li>UPN QR</li><li>Stripe</li><li>SMS</li><li>E-pošta</li><li>Push</li><li>Trainerize</li><li>Excel / CSV</li>
+          <li>FURS</li><li>UPN QR</li><li>eSLOG</li><li>Stripe</li><li>SMS</li><li>E-pošta</li><li>Push</li><li>Google Koledar</li><li>iPhone in Android</li><li>Trainerize</li><li>Excel / CSV</li>
         </ul>
       </div>
     </section>
@@ -176,6 +180,7 @@
               <li>Računi v enem programu, karte v drugem</li>
               <li>Kdo mu poteče karta? »Bom pogledal.«</li>
               <li>Opomniki po SMS-ju s službenega telefona</li>
+              <li>Treningi v eni aplikaciji, prehrana v drugi, klepet v tretji</li>
               <li>Mesečno poročilo = petek zvečer</li>
             </ul>
           </div>
@@ -187,8 +192,9 @@
               <li>E-podpis, shranjeno pri stranki</li>
               <li>Plačan predračun sam postane račun in nova karta</li>
               <li>Stanje karte se izračuna samo, vsak trenutek</li>
-              <li>Samodejni opomniki pred terminom in iztekom karte</li>
-              <li>Poročila v živo: promet, podaljšanja, vrednost stranke</li>
+              <li>Opomniki po e-pošti in SMS-ju, ki gredo ven sami</li>
+              <li>Ena aplikacija za stranke: trening, prehrana, klepet, karta</li>
+              <li>Poročila v živo, »Moj dan« pa pove, koga poklicati danes</li>
             </ul>
           </div>
         </div>
@@ -208,8 +214,8 @@
           <article class="card card--wide reveal">
             <div class="card__ic"><i class="ic ic-users"></i></div>
             <h3>Stranke in plačniki</h3>
-            <p>Celoten register z zgodovino kart, obiskov, računov in dokumentov. Račun gre lahko stranki, njenemu s.p.-ju ali delodajalcu — en plačnik lahko plačuje za več strank.</p>
-            <ul class="tags"><li>Skrbnik za vsako stranko</li><li>Privolitve po kanalih</li><li>Odsotnosti</li></ul>
+            <p>Profil stranke s trenutno karto, časovnico, cilji in navadami, opombami in oceno stranke. Seznam s pogledi in filtri po trenerju, napredku in zadnjem treningu. Račun gre lahko stranki, njenemu s.p.-ju ali delodajalcu — en plačnik plačuje za več strank.</p>
+            <ul class="tags"><li>Skrbnik za vsako stranko</li><li>Predaja strank ob odhodu trenerja</li><li>Privolitve po kanalih</li><li>Iskanje z ⌘K</li></ul>
           </article>
           <article class="card reveal">
             <div class="card__ic"><i class="ic ic-tag"></i></div>
@@ -223,8 +229,8 @@
           </article>
           <article class="card reveal">
             <div class="card__ic"><i class="ic ic-cal"></i></div>
-            <h3>Koledar in termini</h3>
-            <p>Termini po lokacijah in trenerjih, pravila rezervacij in urniki. Posvet lahko rezervirate tudi kontaktu, ki še ni stranka.</p>
+            <h3>Koledar in skupinske vadbe</h3>
+            <p>Termini po lokacijah in trenerjih, ponavljajoči termini, vadbe s čakalno vrsto in stalnim mestom, dopusti ekipe in zasedenost. Vse se lahko zrcali v Google Koledar.</p>
           </article>
           <article class="card reveal">
             <div class="card__ic"><i class="ic ic-check"></i></div>
@@ -234,8 +240,8 @@
           <article class="card card--wide card--hot reveal">
             <div class="card__ic"><i class="ic ic-doc"></i></div>
             <h3>Računi, predračuni in davčno potrjevanje</h3>
-            <p>Predračun z UPN QR kodo, plačilo po nakazilu ali s kartico, nato račun, potrjen pri FURS z ZOI in EOR. PDF z vašim logotipom gre stranki po e-pošti.</p>
-            <ul class="tags"><li>FURS</li><li>UPN QR</li><li>Dobropisi</li><li>Povezava za plačilo</li></ul>
+            <p>Predračun z UPN QR kodo, plačilo po nakazilu ali s kartico, nato račun, potrjen pri FURS z ZOI in EOR. PDF z vašim logotipom gre stranki po e-pošti, podjetjem pa po želji še e-račun eSLOG.</p>
+            <ul class="tags"><li>FURS</li><li>UPN QR</li><li>eSLOG 2.0</li><li>Dobropisi</li><li>Opomini za plačilo</li></ul>
           </article>
           <article class="card reveal">
             <div class="card__ic"><i class="ic ic-card"></i></div>
@@ -254,13 +260,19 @@
           </article>
           <article class="card reveal">
             <div class="card__ic"><i class="ic ic-board"></i></div>
-            <h3>Prodaja in skrb za stranke</h3>
-            <p>Tabla kontaktov s spletnim obrazcem za vašo stran. Kontakt postane stranka sam, ko plača predračun ali podpiše pogodbo.</p>
+            <h3>CRM in skrb za stranke</h3>
+            <p>Table za nove kontakte, skrbništvo, uvajanje novih strank in vračanje nekdanjih. Klicna vrsta, izidi klicev in razlogi za »ne«. Kontakt postane stranka sam.</p>
           </article>
           <article class="card reveal">
             <div class="card__ic"><i class="ic ic-msg"></i></div>
-            <h3>Opomniki in sporočila</h3>
-            <p>Samodejni opomniki po e-pošti pred terminom in pred iztekom karte, z odjavo v enem kliku in dnevnikom pri vsaki stranki.</p>
+            <h3>Sporočila in kampanje</h3>
+            <p>Opomniki in kampanje po e-pošti in SMS-ju, obvestila iz aplikacije kot push. Predloge, izbira prejemnikov po trenerju ali stanju karte, pošiljanje ob izbranem času in dnevnik vsakega sporočila.</p>
+          </article>
+          <article class="card card--wide reveal">
+            <div class="card__ic"><i class="ic ic-grid"></i></div>
+            <h3>Moj dan</h3>
+            <p>Vsak član ekipe zjutraj vidi svoje: koga poklicati, kdo čaka na pregled vprašalnika, komu poteče karta, katera stranka je pred novim programom in katere ponavljajoče naloge kluba so na vrsti. Naloge, ki jih GymRhythm izračuna iz podatkov — ne seznam, ki ga nekdo vzdržuje.</p>
+            <ul class="tags"><li>Stanje kluba</li><li>Klici kontaktov</li><li>Ponavljajoče naloge</li><li>Prestavi na jutri</li></ul>
           </article>
           <article class="card reveal">
             <div class="card__ic"><i class="ic ic-chart"></i></div>
@@ -275,7 +287,7 @@
           <article class="card reveal">
             <div class="card__ic"><i class="ic ic-shield"></i></div>
             <h3>Ekipa in vloge</h3>
-            <p>Lastnik, vodja, administracija, trener in računovodstvo — vsak vidi in ureja točno tisto, kar potrebuje.</p>
+            <p>Lastnik, vodja, administracija, trener in računovodstvo — vsak vidi in ureja točno tisto, kar potrebuje. Klepet ekipe za skupne pogovore in pogovore ena na ena.</p>
           </article>
           <article class="card reveal">
             <div class="card__ic"><i class="ic ic-upload"></i></div>
@@ -286,6 +298,99 @@
             <div class="card__ic"><i class="ic ic-download"></i></div>
             <h3>Izvoz vseh podatkov</h3>
             <p>Lastnik kadarkoli prenese ZIP z vsemi tabelami in dokumenti. Vaši podatki ostanejo vaši.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-tag"></i></div>
+            <h3>Darilni boni in nagrade</h3>
+            <p>Darilni boni za prodajo na blagajni, popusti stranke in nagrade, ki jih trener podeli in se odštejejo na naslednjem računu.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MEMBER APP ============ -->
+    <section class="section split" id="aplikacija">
+      <div class="wrap split__inner">
+        <div class="split__copy reveal">
+          <p class="kicker">Aplikacija za stranke</p>
+          <h2>Vaš klub v žepu vsake stranke.</h2>
+          <p class="section__lead">Stranka se prijavi s kodo iz e-pošte — brez gesla — in ima na telefonu vse: svojo karto, današnji trening, prehrano, klepet s trenerjem in prijave na vadbe. Z vašim imenom in barvo, v brskalniku ali v aplikaciji za iPhone in Android.</p>
+          <ul class="checks">
+            <li><b>Trening vaja za vajo</b>: ogrevanje, glavni del in zaključek, video vsake vaje, serije z RIR v enem dotiku, odmor in osebni rekordi na koncu</li>
+            <li><b>Napredek</b> pri vsaki vaji: zadnja serija, sprememba in krivulja</li>
+            <li><b>Prehrana</b>: cilji, baza živil, dnevnik obrokov in ocena obroka s fotografije</li>
+            <li><b>Klepet z ekipo</b> s fotografijami in obvestilom push, ko trener odgovori</li>
+            <li><b>Prijava na vadbe</b>, termini v koledarju telefona ali v Google Koledarju</li>
+            <li><b>Vprašalniki</b>: tedenski check-in, počutje pred treningom, bolečine — trener jih dobi v »Moj dan«</li>
+            <li><b>Karta in dokumenti</b>: stanje karte, podpis pristopne izjave, izbris računa na zahtevo</li>
+          </ul>
+        </div>
+        <div class="portal-stage reveal" data-club-theme aria-label="Prikaz aplikacije za stranke">
+          <div class="phone phone--portal">
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+              <div class="pt">
+                <div class="pt__band">
+                  <div class="pt__club"><span class="app__clublogo" data-club-initial>A</span><b data-club-name>Atlas Gym</b></div>
+                  <small>Trening B · Glavni del</small>
+                  <b class="pt__ex">Počep s palico</b>
+                  <div class="pt__dots"><i class="on"></i><i class="on"></i><i class="cur"></i><i></i><i></i></div>
+                </div>
+                <div class="pt__body">
+                  <div class="pt__target"><span>Cilj</span><b>4 × 6–8 · RIR 2</b></div>
+                  <ul class="pt__sets">
+                    <li class="done"><em>1</em><span>80 kg × 8</span><small>RIR 2</small></li>
+                    <li class="done"><em>2</em><span>82,5 kg × 7</span><small>RIR 2</small></li>
+                    <li class="now"><em>3</em><span>85 kg × <b>7</b></span><small>RIR 1</small></li>
+                    <li><em>4</em><span>85 kg × –</span><small>—</small></li>
+                  </ul>
+                  <div class="pt__rir"><span>RIR</span><i>0</i><i class="on">1</i><i>2</i><i>3</i><i>4+</i></div>
+                  <span class="pt__btn">Shrani serijo</span>
+                </div>
+                <nav class="pt__tabs"><span>Domov</span><span class="on">Trening</span><span>Napredek</span><span>Prehrana</span><span>Klepet</span></nav>
+              </div>
+            </div>
+          </div>
+          <div class="toast toast--pr"><span class="toast__ic club">★</span><div><b>Nov osebni rekord</b><small>Počep · 85 kg × 7</small></div></div>
+          <div class="toast toast--chat"><span class="toast__ic ok">✉</span><div><b>Maja · trenerka</b><small>Super tempo! Naslednji teden +2,5 kg.</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRAINING ============ -->
+    <section class="section" id="trening">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="kicker">Trening za trenerje</p>
+          <h2>Programi, ki jih trener sestavi v minutah — in stranka res opravi.</h2>
+          <p class="section__lead">Knjižnica vaj z videi, programi po fazah in treningi po delih. Trener vidi, kdo je na vrsti za novo fazo, stranka pa dobi program v aplikaciji takoj, ko je pripravljen.</p>
+        </div>
+        <div class="grid">
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-upload"></i></div>
+            <h3>Knjižnica vaj z videi</h3>
+            <p>Začetna knjižnica vaj in programov je v vsakem klubu od prvega dne. Dodajte svoje vaje in naložite svoje videe.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-check"></i></div>
+            <h3>Programi in bloki</h3>
+            <p>Faze, treningi po delih (ogrevanje, moč, glavni del, finišer, ohlajanje), superserije in naprednejše metode. Bloke sestavite enkrat in jih dodate v katerikoli trening.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-chart"></i></div>
+            <h3>Predlogi bremen</h3>
+            <p>Iz zadnjega rezultata stranke GymRhythm predlaga breme za naslednjo serijo — trener in stranka vidita isto.</p>
+          </article>
+          <article class="card card--wide card--hot reveal">
+            <div class="card__ic"><i class="ic ic-grid"></i></div>
+            <h3>Generator programov <span class="soon">beta</span></h3>
+            <p>Izberite cilj, dneve, trajanje in opremo — generator sestavi program po fazah, z izbiro vaj, progresijo in opozorili, in ga shrani v knjižnico ali kot pripravljen program za stranko. Trener ga pregleda in pošlje, ko je pripravljen.</p>
+            <ul class="tags"><li>Pripravljeni programi</li><li>Predogled pred pošiljanjem</li><li>Shranjene nastavitve</li></ul>
+          </article>
+          <article class="card reveal">
+            <div class="card__ic"><i class="ic ic-cal"></i></div>
+            <h3>Na vrsti</h3>
+            <p>Seznam strank, ki jim zmanjkuje treningov v fazi ali programu — skupaj z vprašalnikom za naslednji program, ki ga stranka izpolni sama.</p>
           </article>
         </div>
       </div>
@@ -302,7 +407,8 @@
             <li><b>Logotip in barva</b> na vmesniku, PDF-jih in e-pošti — s predogledom v živo</li>
             <li><b>Lastna domena</b>, npr. app.vasklub.si, s certifikatom HTTPS samodejno</li>
             <li><b>E-pošta v imenu kluba</b> od prve minute, lastna domena pošiljatelja po želji</li>
-            <li><b>SMS z imenom kluba</b> kot pošiljateljem <span class="soon">kmalu</span></li>
+            <li><b>SMS z imenom kluba</b> kot pošiljateljem, ko ga odobri operater</li>
+            <li><b>Aplikacija za stranke</b> v barvah in z logotipom kluba, tudi v aplikaciji za telefon</li>
           </ul>
 
           <div class="tuner" aria-label="Preizkusite svojo znamko">
@@ -454,15 +560,15 @@
     <section class="section split split--wide" id="prodaja">
       <div class="wrap split__inner">
         <div class="split__copy reveal">
-          <p class="kicker">Prodaja</p>
-          <h2>Kontakt postane stranka. Sam.</h2>
-          <p class="section__lead">Spletni obrazec na vaši strani pošlje kontakt naravnost v stolpec »Nov«, klub pa dobi e-pošto. Posvet, predračun, podpis — in ko kontakt plača ali podpiše, postane stranka, s terminom in privolitvijo vred.</p>
+          <p class="kicker">CRM</p>
+          <h2>Kontakt postane stranka. Stranka ostane.</h2>
+          <p class="section__lead">Spletni obrazec na vaši strani pošlje kontakt naravnost na tablo. Klic, posvet, predračun, podpis — in ko kontakt plača ali podpiše, postane stranka. Potem jo prevzamejo table za uvajanje in skrbništvo, nekdanje stranke pa tabla za ponovno aktivacijo.</p>
           <ul class="checks">
             <li><b>Obrazec za vašo spletno stran</b> kot povezava ali koda za vstavljanje; ponovna prijava se doda k obstoječemu kontaktu</li>
-            <li><b>Povleci in spusti</b> med stolpci, filter »Moji kontakti«, iskanje po imenu, e-pošti ali telefonu</li>
-            <li><b>Kartice brez aktivnosti</b> po treh dneh oranžno pokažejo, kako dolgo že čakajo</li>
-            <li><b>Naslednji korak z enim klikom</b>: rezerviraj posvet, pripravi predračun, pošlji v podpis</li>
-            <li><b>Pridobljeni in izgubljeni</b> na svojih seznamih — izgubljenega vrnete na tablo</li>
+            <li><b>Klicna vrsta</b> z naslednjim stikom, klicem ali SMS-jem s kartice in izidom klica: posvet, ni dvignil, ne zanima</li>
+            <li><b>Prioriteta, kampanja in trener</b> na kartici, razlogi za »ne«, ki jih klub nastavi sam</li>
+            <li><b>Stolpci po meri</b>: imena, vrstni red in vloge stolpcev uredite v nastavitvah</li>
+            <li><b>Uvajalna e-sporočila</b> za nove stranke, vsako vklopite posebej</li>
           </ul>
         </div>
         <div class="board reveal" data-club-theme aria-label="Prikaz prodajne table">
@@ -562,28 +668,29 @@
     </section>
 
     <!-- ============ MESSAGING ============ -->
-    <section class="section split split--rev" id="opomniki">
+    <section class="section split split--rev" id="avtomatizacije">
       <div class="wrap split__inner">
         <div class="split__copy reveal">
-          <p class="kicker">Opomniki</p>
+          <p class="kicker">Avtomatizacije</p>
           <h2>Pravo sporočilo, pravi osebi, ob pravem času.</h2>
-          <p class="section__lead">GymRhythm sam pošilja opomnike po e-pošti — pred terminom in pred iztekom karte. Vsakega samo enkrat, le med 8. in 20. uro, odgovori pa pridejo na naslov kluba.</p>
+          <p class="section__lead">GymRhythm sam pošilja opomnike po e-pošti in SMS-ju, obvestila iz aplikacije pa kot push — pred terminom, pred iztekom karte, za neplačan predračun. Na enem mestu vidite vse, kar gre ven samo: po temah, po kanalih in po poti stranke, z zgodovino sprememb.</p>
           <ul class="checks">
-            <li><b>Opomnik pred terminom</b> dan prej (ali isto jutro za zgodnji termin), za stranke in kontakte</li>
-            <li><b>Opomnik pred iztekom karte</b> — privzeto 7 dni prej, nastavljivo od 1 do 30 — le če podaljšanje še ni prodano</li>
-            <li><b>Odjava z enim klikom</b>, zabeležena kot privolitev, skupaj z odgovori z recepcije</li>
-            <li><b>Dnevnik pri vsaki stranki</b>: kaj je šlo ven, kaj ne — in zakaj</li>
-            <li><b>Pošlji zdaj</b> za termin, ki je nastal po večernem pošiljanju</li>
+            <li><b>Opomnik pred terminom</b> dan prej, po želji z dogodkom za koledar v telefonu</li>
+            <li><b>Opomnik pred iztekom karte</b> — le če podaljšanje še ni prodano — in <b>opomini za plačilo</b>, ki počakajo na svež bančni izpisek</li>
+            <li><b>Opomniki po meri</b>: napišite svoje besedilo in pravilo, pred vklopom pa vidite predogled in koliko ljudi bo dobilo sporočilo</li>
+            <li><b>Kampanje</b> izbranim strankam, s predlogami in pošiljanjem ob izbranem času</li>
+            <li><b>Zavora</b>: en gumb ustavi vsa samodejna sporočila strankam</li>
+            <li><b>Odjava z enim klikom</b> in <b>dnevnik pri vsaki stranki</b>: kaj je šlo ven, kaj ne — in zakaj</li>
           </ul>
         </div>
         <div class="chat reveal" data-club-theme>
           <div class="sms"><small class="sms__from"><span data-club-name>Atlas Gym</span> · e-pošta</small><p><b>Jutri ob 7.00 vas čaka osebni trening</b> z Majo na Lokaciji Center. Se vidimo!</p><time>Včeraj 17.05</time></div>
-          <div class="sms"><small class="sms__from"><span data-club-name>Atlas Gym</span> · e-pošta</small><p>Vaša karta poteče čez 7 dni. Podaljšate jo lahko na recepciji ali s kartico prek povezave.</p><time>Danes 9.05</time></div>
+          <div class="sms"><small class="sms__from"><span data-club-name>Atlas Gym</span> · SMS</small><p>Vaša karta poteče čez 7 dni. Podaljšate jo lahko na recepciji ali s kartico prek povezave.</p><time>Danes 9.05</time></div>
           <div class="msglog">
-            <div class="msglog__h"><b>Dnevnik sporočil · danes</b><span class="chip">SMS in push kmalu</span></div>
+            <div class="msglog__h"><b>Dnevnik sporočil · danes</b><span class="chip">E-pošta · SMS · push</span></div>
             <ul>
-              <li class="ok"><span>Eva K. · karta se izteka</span><em>poslano 9.05</em></li>
-              <li class="ok"><span>Luka P. · opomnik za termin</span><em>poslano 9.05</em></li>
+              <li class="ok"><span>Eva K. · karta se izteka</span><em>SMS · 9.05</em></li>
+              <li class="ok"><span>Luka P. · opomnik za termin</span><em>e-pošta · 9.05</em></li>
               <li class="skip"><span>Marko V. · opomnik za termin</span><em>ni poslano · ni e-pošte</em></li>
             </ul>
           </div>
@@ -631,7 +738,7 @@
           </div>
         </div>
         <ul class="rlist reveal">
-          <li>Promet po kategorijah</li><li>Stranke z veljavno karto</li><li>Podaljšanja</li><li>Vrednost stranke</li><li>Kontakti in uspešnost prodaje</li><li>Trenerji: ure, udeleženi in zamujeni termini</li><li>Kdaj prihajajo</li><li>Danes: obiski, termini, promet</li>
+          <li>Promet po kategorijah</li><li>Gibanje strank</li><li>Kohorte</li><li>Stranke, ki pojenjajo</li><li>Podaljšanja</li><li>Vrednost stranke</li><li>Kontakti in uspešnost prodaje</li><li>Zasedenost vadb</li><li>Obremenitev trenerjev</li><li>Kdaj prihajajo</li><li>Knjigovodstvo: DDV in oddaja računovodji</li>
         </ul>
       </div>
     </section>
@@ -645,12 +752,15 @@
           <p class="section__lead">Vklopite jih, ko jih potrebujete. Izklopljen modul v bazi vašega kluba nima niti tabele.</p>
         </div>
         <div class="addon-grid">
-          <article class="addon reveal"><span class="addon__ic">€</span><h3>Računovodstvo</h3><p>Bančni izpiski, stroški, prejeti računi, razmejitev prihodkov in izvoz za računovodjo ob koncu meseca.</p></article>
-          <article class="addon reveal"><span class="addon__ic">⏱</span><h3>Ekipa</h3><p>Delovni dnevnik trenerjev, izplačila in potni stroški, brez tabel ob koncu meseca.</p></article>
-          <article class="addon reveal"><span class="addon__ic">↻</span><h3>Trainerize</h3><p>Sinhronizacija obiskov in napredka pri vajah ter mesečna poročila za stranke.</p></article>
-          <article class="addon reveal"><span class="addon__ic">✦</span><h3>Prehrana z AI</h3><p>Vprašalnik, prehranski načrti, analiza dnevnika, pogovor in tedenska poročila.</p></article>
-          <article class="addon reveal"><span class="addon__ic">◎</span><h3>AI asistent</h3><p>Vprašajte v svojem jeziku: »Komu poteče karta ta teden?« in dobite odgovor iz svojih podatkov.</p></article>
-          <article class="addon reveal"><span class="addon__ic">▲</span><h3>Lestvica</h3><p>Javna lestvica v živo za zaslon v fitnesu. Malo zdrave tekmovalnosti.</p></article>
+          <article class="addon reveal"><span class="addon__ic">▶</span><h3>Aplikacija za stranke</h3><p>Prijava s kodo iz e-pošte, karta, prijave na vadbe in dokumenti na telefonu — v brskalniku ali v aplikaciji za iPhone in Android.</p></article>
+          <article class="addon reveal"><span class="addon__ic">↗</span><h3>Trening</h3><p>Knjižnica vaj z videi, programi po fazah, predlogi bremen in generator programov. Stranke trenirajo v aplikaciji.</p></article>
+          <article class="addon reveal"><span class="addon__ic">✦</span><h3>Prehrana z AI</h3><p>Cilji, baza živil in dnevnik obrokov. Stranka fotografira ali opiše obrok, AI pa oceni kalorije in makrohranila.</p></article>
+          <article class="addon reveal"><span class="addon__ic">✉</span><h3>Klepet</h3><p>Stranke pišejo ekipi kluba, s fotografijami in obvestili push. Ekipa ima še svoj klepet za skupne pogovore.</p></article>
+          <article class="addon reveal"><span class="addon__ic">☑</span><h3>Obrazci <span class="soon">beta</span></h3><p>Tedenski check-in, počutje pred treningom, vprašalnik o bolečinah in za naslednji program. Pregled čaka v »Moj dan«.</p></article>
+          <article class="addon reveal"><span class="addon__ic">€</span><h3>Računovodstvo</h3><p>Bančni izpiski, stroški, prejeti računi, razmejitev prihodkov, DDV za mesec in paket za računovodjo.</p></article>
+          <article class="addon reveal"><span class="addon__ic">⏱</span><h3>Evidence ekipe</h3><p>Delovni dnevnik trenerjev, izplačila in potni stroški, brez tabel ob koncu meseca.</p></article>
+          <article class="addon reveal"><span class="addon__ic">₪</span><h3>Spletna plačila</h3><p>Stripe z enim klikom: stranka plača predračun s kartico, GymRhythm izda in potrdi račun ter podaljša karto.</p></article>
+          <article class="addon reveal"><span class="addon__ic">↻</span><h3>Trainerize <span class="soon">beta</span></h3><p>Za klube, ki ostajajo na Trainerize: opravljeni treningi se vsaki dve uri zapišejo kot obiski.</p></article>
         </div>
       </div>
     </section>
@@ -700,7 +810,7 @@
           <div class="sec reveal"><b>Podatki v EU</b><p>Gostovanje v Frankfurtu, ves promet šifriran, varnostne kopije z obnovitvijo na točko v času.</p></div>
           <div class="sec reveal"><b>Brez vpogleda brez dovoljenja</b><p>Ekipa GymRhythm vaših podatkov ne vidi. Za podporo nam lastnik odobri časovno omejen dostop, vsak korak pa ostane v dnevniku.</p></div>
           <div class="sec reveal"><b>Šifrirane skrivnosti</b><p>Potrdila FURS in ključi integracij so zapečateni s Cloud KMS. Do vašega ključa Stripe sploh ne pridemo.</p></div>
-          <div class="sec reveal"><b>Privolitve kot dokaz</b><p>Vsak »da« in »ne« po kanalu in namenu ostane zabeležen z datumom — vaš dokaz po GDPR.</p></div>
+          <div class="sec reveal"><b>Privolitve in izbris</b><p>Vsak »da« in »ne« po kanalu in namenu ostane zabeležen z datumom. Izbris stranke po GDPR in javna izjava o zasebnosti kluba za vaše obrazce.</p></div>
           <div class="sec reveal"><b>Vaši podatki, vaš izhod</b><p>Lastnik kadarkoli v nastavitvah prenese ZIP z vsemi tabelami (CSV, ki ga odpre Excel) in vsemi dokumenti. Vsak prenos je zabeležen.</p></div>
         </div>
       </div>
@@ -713,7 +823,7 @@
           GymRhythm ni nastal na tabli v pisarni. Zrasel je iz aplikacije, ki vsak dan vodi pravi fitnes v Ljubljani — z vsemi računi, pogodbami in opomniki vred.
         </blockquote>
         <dl class="stats">
-          <div><dt><span class="num" data-count="15">15</span></dt><dd>modulov</dd></div>
+          <div><dt><span class="num" data-count="16">16</span></dt><dd>modulov</dd></div>
           <div><dt><span class="num" data-count="5">5</span></dt><dd>vlog v ekipi</dd></div>
           <div><dt><span class="num" data-count="3">3</span></dt><dd>kanali sporočil</dd></div>
           <div><dt><span class="num">0</span></dt><dd>strežnikov za vzdrževanje</dd></div>
@@ -735,11 +845,12 @@
             <p class="plan__sub">Vse, kar klub potrebuje vsak dan.</p>
             <ul class="checks checks--tight">
               <li>Stranke, plačniki, cenik in karte</li>
-              <li>Koledar, obiski, osebni treningi</li>
-              <li>Računi, predračuni, UPN QR, blagajna</li>
+              <li>Koledar, skupinske vadbe, obiski, osebni treningi</li>
+              <li>Računi, predračuni, UPN QR, eSLOG, blagajna</li>
               <li>Davčno potrjevanje FURS</li>
               <li>Pogodbe in e-podpisi</li>
-              <li>Prodaja, opomniki, poročila</li>
+              <li>CRM, Moj dan, avtomatizacije, kampanje</li>
+              <li>Poročila</li>
               <li>Uvoz iz Excela in izvoz vseh podatkov</li>
               <li>Vaša znamka in domena</li>
             </ul>
@@ -761,24 +872,25 @@
             <h3>Dodatki</h3>
             <p class="plan__sub">Vklopite po modulih, kadarkoli.</p>
             <ul class="checks checks--tight">
+              <li>Aplikacija za stranke</li>
+              <li>Trening in generator programov</li>
+              <li>Prehrana z AI</li>
+              <li>Klepet</li>
+              <li>Obrazci</li>
               <li>Spletna plačila (Stripe)</li>
               <li>Računovodstvo</li>
-              <li>Ekipa in izplačila</li>
+              <li>Evidence ekipe</li>
               <li>Trainerize</li>
-              <li>Prehrana z AI</li>
-              <li>AI asistent</li>
-              <li>Lestvica</li>
             </ul>
           </article>
         </div>
         <div class="roadmap reveal">
           <b>Na poti</b>
-          <span>SMS in push</span>
-          <span>Table po meri in skrb za stranke</span>
+          <span>Naročnine s kartico (Stripe)</span>
           <span>Ponavljajoče bremenitve (SEPA)</span>
-          <span>Portal za stranke</span>
           <span>Prijava na recepciji in vrata</span>
-          <span>Urejanje predlog besedil</span>
+          <span>AI asistent</span>
+          <span>Lestvica za zaslon v fitnesu</span>
         </div>
       </div>
     </section>
@@ -794,6 +906,14 @@
           <details class="reveal">
             <summary>Ali moram karkoli namestiti?</summary>
             <p>Ne. GymRhythm teče v brskalniku na računalniku, tablici in telefonu. Strežnike, posodobitve in varnostne kopije urejamo mi.</p>
+          </details>
+          <details class="reveal">
+            <summary>Ali imajo naše stranke svojo aplikacijo?</summary>
+            <p>Da. Stranke se prijavijo s kodo iz e-pošte, brez gesla, in na telefonu vidijo svojo karto, treninge, prehrano, klepet z ekipo in prijave na vadbe — v barvah in z logotipom vašega kluba. Deluje v brskalniku ali v aplikaciji za iPhone in Android, ki pošilja tudi obvestila push.</p>
+          </details>
+          <details class="reveal">
+            <summary>Uporabljamo Trainerize. Ga moramo opustiti?</summary>
+            <p>Ne nujno. Trening lahko preselite v GymRhythm, kjer so programi, knjižnica vaj z videi in aplikacija za stranke že vključeni. Če želite ostati na Trainerize, ga povežete in opravljeni treningi se zapišejo kot obiski.</p>
           </details>
           <details class="reveal">
             <summary>Kako hitro lahko začnemo?</summary>
